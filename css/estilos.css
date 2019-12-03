@@ -29,7 +29,52 @@
      color: transparent;
 }
 
+/*Animacion linea debajo de cada elemento de la navbar */
+.nav-item{
+     font-family: 'Raleway', sans-serif;
+   
+}
+.nav-link{
+     
+     padding: 0 2em;
+     margin: 0.3em;
+     transition: all .4s;
+     
+}
 
+.nav-link:hover{
+     border-bottom: 3px solid red;
+     
+}
+
+
+/*Submenu Desplegable */
+.submenu{
+     list-style: none;
+     position: absolute;
+     visibility: hidden;
+     
+     opacity: 0;
+     transition: opacity 1.5s;
+}
+.submenu li a{
+     display: block;
+     padding: 10px;
+     color: black;
+     text-decoration: none;
+     font-family: 'Raleway', sans-serif;
+     border: 1px solid rgb(14, 40, 59);
+     width: 280px;
+}
+#navbarNav li:hover .submenu{
+     visibility: visible;
+     opacity: 1;
+}
+.submenu li a:hover{
+     background:rgba(206, 214, 224,.5);
+     color: red;
+}
+  
 
 /* Animación para la navbar cuando se junta con el escudo */ 
 .animacion{
