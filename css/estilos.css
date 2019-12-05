@@ -4,7 +4,8 @@
 }
 
 .navbar{
-     background: rgb(196, 195, 195);
+     background: rgb(175, 175, 175);
+     height: 40px;
 }
 .fondoMenu{
      background: #CC1E0E;
@@ -36,6 +37,8 @@
 .nav-item{
      font-family: 'Raleway', sans-serif;
      font-size: 15px;
+     font-weight: bold;
+     
 }
 .nav-link{
 
@@ -68,13 +71,14 @@
      font-family: 'Raleway', sans-serif;
      border: 1px solid rgb(14, 40, 59);
      width: 280px;
+     background: rgb(231, 231, 231);
 }
 #navbarNav li:hover .submenu{
      visibility: visible;
      opacity: 1;
 }
 .submenu li a:hover{
-     background:rgba(206, 214, 224,.5);
+     background:rgba(184, 183, 183, 0.7);
      color: red;
 }
 

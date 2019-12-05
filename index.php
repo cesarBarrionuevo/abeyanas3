@@ -46,7 +46,7 @@
 
     <!--NAVEGACIÓN-->
 
-    <nav class="navbar sticky-top navbar-expand-sm bg-light navbar-light">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +56,7 @@
             <ul class="navbar-nav">
                 <li class="d-none" id="escudo">
                   <!--<p class="texto-borde"><strong>ClubSportivo</strong>Avellaneda-->
-                  <a href="#"><img src="img/escudo.png" width="35" height="35"
+                  <a href="#"><img src="img/escudo.png" width="40" height="40"
                           class="d-inline-block align-top"></a>
                 </li>
                 <li class="nav-item">
