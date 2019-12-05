@@ -9,6 +9,11 @@
     <!--BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="css/estilos.css">
     <!--FONTS-->
@@ -29,10 +34,10 @@
 
 
          </div>
-        <div class="container">
+        <div class="container-fluid">
                <div class="row encabezaLogo">
                     <a href="#">
-                        <img src="img/nuevopng.png" style="width: 60%;" alt="imagen">
+                        <p style="margin-left: 250px;"> <img src="img/nuevopng.png" style="width: 60%;" alt="imagen"></p>
                     </a>
                </div>
         </div>
@@ -41,7 +46,7 @@
 
     <!--NAVEGACIÓN-->
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+    <nav class="navbar sticky-top navbar-expand-sm bg-light navbar-light">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,9 +55,9 @@
         <div class="collapse navbar-collapse " id="navbarNav">
             <ul class="navbar-nav">
                 <li class="d-none" id="escudo">
-                    <!--<p class="texto-borde"><strong>ClubSportivo</strong>Avellaneda-->
-                    <a href="#"><img src="img/escudo.png" width="35" height="35"
-                            class="d-inline-block align-top"></a>
+                  <!--<p class="texto-borde"><strong>ClubSportivo</strong>Avellaneda-->
+                  <a href="#"><img src="img/escudo.png" width="35" height="35"
+                          class="d-inline-block align-top"></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">INICIO</a>
@@ -80,6 +85,7 @@
         </div>
     </nav>
 
+<?php require_once "carousel.php" ?>
 
     <br>
     <br>
@@ -204,7 +210,7 @@ function myFunction() {
         var i;
         for (i = 0; i < x.length; i++) {
             x[i].classList.add('animacion');
-  
+
         }
 
 
@@ -215,7 +221,7 @@ function myFunction() {
         var i;
         for (i = 0; i < x.length; i++) {
             x[i].classList.remove('animacion');
-  
+
         }
 
     }

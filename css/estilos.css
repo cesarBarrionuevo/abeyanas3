@@ -2,6 +2,7 @@
      margin: 0px;
      padding: 0px;
 }
+
 .navbar{
      background: rgb(196, 195, 195);
 }
@@ -24,7 +25,7 @@
 }
 .encabezaLogo{
      padding-top: 15px;
-     
+
 }
 .texto-borde{
      -webkit-text-stroke: 1px red;
@@ -35,19 +36,18 @@
 .nav-item{
      font-family: 'Raleway', sans-serif;
      font-size: 15px;
-   
 }
 .nav-link{
-     
+
      padding: 0 2em;
      margin: 0.3em;
      transition: all .4s;
-     
+
 }
 
 .nav-link:hover{
      border-bottom: 3px solid red;
-     
+
 }
 
 
@@ -56,7 +56,7 @@
      list-style: none;
      position: absolute;
      visibility: hidden;
-     
+
      opacity: 0;
      transition: opacity 1.5s;
 }
@@ -77,11 +77,11 @@
      background:rgba(206, 214, 224,.5);
      color: red;
 }
-  
 
-/* Animación para la navbar cuando se junta con el escudo */ 
+
+/* Animación para la navbar cuando se junta con el escudo */
 .animacion{
-     
+
      position: relative;
      -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
      animation: mymove 5s infinite;
@@ -90,31 +90,30 @@
      from {left: 0px;}
      to {left: 200px;}
    }
-   
+
    @keyframes mymove {
      from {left: 0px;}
      to {left: 200px;}
    }
    .animacion {
-    
+
      left: -28px;
-     
-     
+
+
      -webkit-animation: slide 0.3s forwards;
      -webkit-animation-delay: .3s;
      animation: slide .3s forwards;
      animation-delay: .05s;
  }
- 
+
  @-webkit-keyframes slide {
      100% { left: 0; }
  }
- 
+
  @keyframes slide {
      100% { left: 0; }
  }
- 
+
 
 /* Animación navbar */
 html{ scroll-behavior: smooth}
-
