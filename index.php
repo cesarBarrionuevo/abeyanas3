@@ -31,17 +31,15 @@
 
                &nbsp;&nbsp;&nbsp;&nbsp;
                 <p style="padding-top:4px;"><img src="img/IMG_EscuEquipos/CSDChapuy.png" style="width: 16%;" alt=""></p>
-
-
          </div>
-        <div class="container-fluid">
+
+         <div class="container-fluid">
                <div class="row encabezaLogo">
                     <a href="#">
                         <p style="margin-left: 250px;"> <img src="img/nuevopng.png" style="width: 60%;" alt="imagen"></p>
                     </a>
                </div>
-        </div>
-
+         </div>
     </header>
 
     <!--NAVEGACIÓN-->
@@ -87,6 +85,11 @@
 
 <?php require_once "carousel.php" ?>
 
+    <div class="container">
+      <div class="container-noticias">
+        asdasdasgfagg
+      </div>
+    </div>
 
     <!--BOOTSTRAP JAVASCRIPT-->
 
@@ -99,6 +102,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
     <!--SCRIPT NAVBAR-->
     <script>
       window.onscroll = function () { myFunction() };
@@ -110,10 +114,7 @@ function myFunction() {
         var i;
         for (i = 0; i < x.length; i++) {
             x[i].classList.add('animacion');
-
         }
-
-
 
     } else {
         document.getElementById("escudo").className = "d-none";
@@ -121,13 +122,9 @@ function myFunction() {
         var i;
         for (i = 0; i < x.length; i++) {
             x[i].classList.remove('animacion');
-
         }
-
     }
 }
     </script>
-
 </body>
-
 </html>

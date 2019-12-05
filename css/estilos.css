@@ -117,16 +117,22 @@ html{ scroll-behavior: smooth}
     width: 100%;
   }
   .carousel{
-    margin-top: 40px;
+      margin-top: 40px;
+      margin-bottom: 40px;
   }
   .carousel-item{
-    text-align: center;
-    min-height: 500px; /* Si la imagen no carga por alguna razón se muestra un padding de 500px */
-    max-height: 500px;
-    width: 100%;
+      text-align: center;
+     /* Si la imagen no carga por alguna razón se muestra un padding de 500px */
+      max-height: 500px;
+      width: 100%;
   }
   .micarousel{
   	margin: 0px;
   }
 
   /*Fin carousel index*/
+
+  .container-noticias{
+
+    background-color: rgb(196, 195, 195);
+  }
