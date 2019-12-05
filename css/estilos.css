@@ -117,3 +117,21 @@
 
 /* Animación navbar */
 html{ scroll-behavior: smooth}
+
+/*Carousel index*/
+
+.carousel-inner img {
+    width: 100%;
+  }
+  .carousel{
+      margin-top: 40px;
+  }
+  .carousel-item{
+      text-align: center;
+      min-height: 500px; /* Si la imagen no carga por alguna razón se muestra un padding de 500px */
+      max-height: 500px;
+      width: 100%;
+  }
+  .micarousel{
+  	margin: 0px;
+  }
