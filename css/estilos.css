@@ -2,7 +2,9 @@
      margin: 0px;
      padding: 0px;
 }
-
+.navbar{
+     background: rgb(196, 195, 195);
+}
 .fondoMenu{
      background: #CC1E0E;
 }
@@ -32,6 +34,7 @@
 /*Animacion linea debajo de cada elemento de la navbar */
 .nav-item{
      font-family: 'Raleway', sans-serif;
+     font-size: 15px;
    
 }
 .nav-link{
