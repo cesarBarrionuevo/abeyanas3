@@ -10,13 +10,13 @@
         <!-- Wrapper for carousel items -->
         <div class="carousel-inner" style="background-color: rgba(0, 0, 0, 0.5);" role="listbox">
             <div class="carousel-item active">
-                <img src="img/av1.jpeg" alt="First Slide" width="520" height="570">
+                <img src="img/av1.jpeg" alt="First Slide">
             </div>
             <div class="carousel-item">
-                <img src="img/av2.jpeg" alt="Second Slide" width="520" height="570">
+                <img src="img/av2.jpeg" alt="Second Slide">
             </div>
             <div class="carousel-item">
-                <img src="img/av3.jpeg" alt="Third Slide" width="520" height="570">
+                <img src="img/av3.jpeg" alt="Third Slide">
             </div>
         </div>
         <!-- Carousel controls -->

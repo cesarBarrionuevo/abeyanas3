@@ -4,8 +4,7 @@
 }
 
 .navbar{
-     background: rgb(216, 216, 216);
-     height: 40px;
+     background: rgb(196, 195, 195);
 }
 .fondoMenu{
      background: #CC1E0E;
@@ -37,22 +36,17 @@
 .nav-item{
      font-family: 'Raleway', sans-serif;
      font-size: 15px;
-     font-weight: bold;
-     
 }
 .nav-link{
-
      padding: 0 2em;
      margin: 0.3em;
      transition: all .4s;
-
 }
 
 .nav-link:hover{
      border-bottom: 3px solid red;
 
 }
-
 
 /*Submenu Desplegable */
 .submenu{
@@ -71,17 +65,15 @@
      font-family: 'Raleway', sans-serif;
      border: 1px solid rgb(14, 40, 59);
      width: 280px;
-     background: rgb(231, 231, 231);
 }
 #navbarNav li:hover .submenu{
      visibility: visible;
      opacity: 1;
 }
 .submenu li a:hover{
-     background:rgba(184, 183, 183, 0.7);
+     background:rgba(206, 214, 224,.5);
      color: red;
 }
-
 
 /* Animación para la navbar cuando se junta con el escudo */
 .animacion{
@@ -100,10 +92,7 @@
      to {left: 200px;}
    }
    .animacion {
-
      left: -28px;
-
-
      -webkit-animation: slide 0.3s forwards;
      -webkit-animation-delay: .3s;
      animation: slide .3s forwards;
@@ -122,20 +111,22 @@
 /* Animación navbar */
 html{ scroll-behavior: smooth}
 
-/*Carousel index*/
+/*Inicio carousel index*/
 
 .carousel-inner img {
     width: 100%;
   }
   .carousel{
-      margin-top: 40px;
+    margin-top: 40px;
   }
   .carousel-item{
-      text-align: center;
-      min-height: 500px; /* Si la imagen no carga por alguna razón se muestra un padding de 500px */
-      max-height: 500px;
-      width: 100%;
+    text-align: center;
+    min-height: 500px; /* Si la imagen no carga por alguna razón se muestra un padding de 500px */
+    max-height: 500px;
+    width: 100%;
   }
   .micarousel{
   	margin: 0px;
   }
+
+  /*Fin carousel index*/
