@@ -122,7 +122,6 @@ html{ scroll-behavior: smooth}
   }
   .carousel-item{
       text-align: center;
-     /* Si la imagen no carga por alguna razón se muestra un padding de 500px */
       max-height: 500px;
       width: 100%;
   }
