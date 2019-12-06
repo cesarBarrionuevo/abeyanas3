@@ -5,6 +5,7 @@
 
 .navbar{
      background: rgb(196, 195, 195);
+     height: 50px;
 }
 .fondoMenu{
      background: #CC1E0E;
@@ -35,7 +36,8 @@
 /*Animacion linea debajo de cada elemento de la navbar */
 .nav-item{
      font-family: 'Raleway', sans-serif;
-     font-size: 15px;
+     font-size: 14px;
+     font-weight: bold;
 }
 .nav-link{
      padding: 0 2em;

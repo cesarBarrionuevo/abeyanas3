@@ -21,67 +21,15 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
-<body style="height:1500px">
+<body style="height:2450px">
 
     <!--HEADER-->
 
-    <header>
-          <div class="row partidos m-auto">
-                <p class="leyenda"><strong style="color:red;">próximo partido </strong>| liga venadense <strong>| 30/11/2019 | 17:00 hs | </strong> visitante </p>
-
-               &nbsp;&nbsp;&nbsp;&nbsp;
-                <p style="padding-top:4px;"><img src="img/IMG_EscuEquipos/CSDChapuy.png" style="width: 16%;" alt=""></p>
-         </div>
-
-         <div class="container-fluid">
-               <div class="row encabezaLogo">
-                    <a href="#">
-                        <p> <img src="img/header2.jpg" style="width: 100%;" alt="imagen"></p>
-                    </a>
-               </div>
-         </div>
-    </header>
+   <?php require_once "header.php" ?>
 
     <!--NAVEGACIÓN-->
 
-    <nav class="navbar sticky-top navbar-expand-sm navbar-light">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="d-none" id="escudo">
-                  <!--<p class="texto-borde"><strong>ClubSportivo</strong>Avellaneda-->
-                  <a href="#"><img src="img/escudo.png" width="40" height="40"
-                          class="d-inline-block align-top"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">INICIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">NOTICIAS</a>
-                   <ul class="submenu m-auto">
-                    <li><a href="">NOTICIAS 1</a></li>
-                    <li><a href="">NOTICIAS 2</a></li>
-                    <li><a href="">NOTICIAS 3</a></li>
-                   </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FÚTBOL</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">FOTOS</a>
-                    <ul class="submenu">
-                        <li><a href="">FOTOS 1</a></li>
-                        <li><a href="">FOTOS 2</a></li>
-                        <li><a href="">FOTOS 3</a></li>
-                       </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
+   <?php require_once "navbar.php" ?>
 
 <?php require_once "carousel.php" ?>
 
@@ -97,7 +45,7 @@
       window.onscroll = function () { myFunction() };
 
 function myFunction() {
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    if (document.body.scrollTop > 245 || document.documentElement.scrollTop > 245) {
         document.getElementById("escudo").className = "";
         var x = document.getElementsByClassName("nav-item");
         var i;

@@ -15,6 +15,9 @@
      <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
+<?php require_once "header.php";
+require_once "navbar.php";
+?>
 
 
 
