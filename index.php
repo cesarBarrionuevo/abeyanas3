@@ -36,7 +36,7 @@
          <div class="container-fluid">
                <div class="row encabezaLogo">
                     <a href="#">
-                        <p style="margin-left: 250px;"> <img src="img/nuevopng.png" style="width: 60%;" alt="imagen"></p>
+                        <p> <img src="img/header.jpg" style="width: 100%;" alt="imagen"></p>
                     </a>
                </div>
          </div>
