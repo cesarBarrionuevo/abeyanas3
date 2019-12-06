@@ -137,3 +137,37 @@ html{ scroll-behavior: smooth}
 
     background-color: rgb(196, 195, 195);
   }
+.numeros{
+     color: gray;
+     font-weight: bold;
+     text-align: right;
+     
+}
+
+/* Animación jugadores del plantel */
+.jugador:hover{
+	-webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-down-center {
+     0% {
+       -webkit-transform: scale(1);
+               transform: scale(1);
+     }
+     100% {
+       -webkit-transform: scale(0.9);
+               transform: scale(0.9);
+     }
+   }
+   @keyframes scale-down-center {
+     0% {
+       -webkit-transform: scale(1);
+               transform: scale(1);
+     }
+     100% {
+       -webkit-transform: scale(0.9);
+               transform: scale(0.9);
+     }
+   }
+   
