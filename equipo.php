@@ -192,6 +192,7 @@ require_once "navbar.php";
                 </div>
                 </div>
                 </div>
+                <br>
 <div class="container m-auto">
 
 <div class="row">
