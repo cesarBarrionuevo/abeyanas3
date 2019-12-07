@@ -31,7 +31,7 @@
 
    <?php require_once "navbar.php" ?>
 
-<?php require_once "carousel.php" ?>
+   <?php require_once "carousel.php" ?>
 
     <div class="container">
       <div class="container-noticias">
