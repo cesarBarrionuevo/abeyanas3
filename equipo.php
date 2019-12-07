@@ -31,7 +31,11 @@ require_once "navbar.php";
 <br><br>
 <div class="container">
 <h1 class="display-4">El Plantel- <strong>PRIMERA DIVISIÓN</strong></h1>
-<img src="img/av3.jpeg" alt="">
+<img class="mx-auto d-block" src="img/av3.jpeg" alt="">
+</div>
+<section class="text-center">
+<div class="container m-auto">
+
 <div class="row">
     <div class="col-lg-3">
 
@@ -39,48 +43,158 @@ require_once "navbar.php";
                         <div class="card-body jugador">
                             <a href="/" style="text-decoration:none; color:black">
                             <img src="img/person.png" class="img-fluid rounded-circle" style="width: 50%;display:block;margin:auto;" alt="person">
+                            <hr>
                             <p>Mediocampista</p>
                             <h3>ALAN BERSIA</h3>
                             <h2 class="numeros display-4">10</h2>
-
-                            <div class="d-flex flex-row justify-content-center">
-                                <div class="p-4">
+                            </div>
+                            
+                            <div id="fondo-icono" class="d-flex flex-row justify-content-center">
+                                <div class="red p-4">
                                     <a href="https://facebook.com/alan.bersia" target="blank">
-                                        <i class="fab fa-facebook-square"></i>
+                                        <i id="icono" class="fab fa-facebook-square"></i>
                                     </a>
                                 </div>
                                 <div class="d-flex flex-row justify-content-center">
                                     <div class="p-4">
                                         <a href="https://twitter.com/home" target="blank">
-                                            <i class="fab fa-twitter"></i>
+                                            <i id="icono" class="fab fa-twitter"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-row justify-content-center">
                                     <div class="p-4">
                                         <a href="#" target="blank">
-                                            <i class="fab fa-instagram"></i>
+                                            <i id="icono" class="fab fa-instagram"></i>
                                         </a>
                                     </div>
-
-                                </div>
+                                
+                                
+                            
                             </div>
                         </div>
                     </div>
                     </a>
                 </div>
-    <div class="col-md-3">
+    <div class="col-lg-3">
+    <div class="card">
+                        <div class="card-body jugador">
+                            <a href="/" style="text-decoration:none; color:black">
+                            <img src="img/person.png" class="img-fluid rounded-circle" style="width: 50%;display:block;margin:auto;" alt="person">
+                            <hr>
+                            <p>Mediocampista</p>
+                            <h3>ALAN BERSIA</h3>
+                            <h2 class="numeros display-4">10</h2>
+                            </div>
+                            <div id="fondo-icono" class="d-flex flex-row justify-content-center">
+                                <div class="red p-4">
+                                    <a href="https://facebook.com/alan.bersia" target="blank">
+                                        <i id="icono" class="fab fa-facebook-square"></i>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="https://twitter.com/home" target="blank">
+                                            <i id="icono" class="fab fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="#" target="blank">
+                                            <i id="icono" class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
 
-    </div>
+                                
+                            
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+               
     <div class="col-md-3">
+    <div class="card">
+                        <div class="card-body jugador">
+                            <a href="/" style="text-decoration:none; color:black">
+                            <img src="img/person.png" class="img-fluid rounded-circle" style="width: 50%;display:block;margin:auto;" alt="person">
+                            <hr>
+                            <p>Mediocampista</p>
+                            <h3>ALAN BERSIA</h3>
+                            <h2 class="numeros display-4">10</h2>
+                            </div>
+                            <div id="fondo-icono" class="d-flex flex-row justify-content-center">
+                                <div class="red p-4">
+                                    <a href="https://facebook.com/alan.bersia" target="blank">
+                                        <i id="icono" class="fab fa-facebook-square"></i>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="https://twitter.com/home" target="blank">
+                                            <i id="icono" class="fab fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="#" target="blank">
+                                            <i id="icono" class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
 
-    </div>
+                                
+                            
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+    
     <div class="col-md-3">
-        
-    </div>
-</div>
-</div>
+    <div class="card">
+                        <div class="card-body jugador">
+                            <a href="/" style="text-decoration:none; color:black">
+                            <img src="img/person.png" class="img-fluid rounded-circle" style="width: 50%;display:block;margin:auto;" alt="person">
+                            <hr>
+                            <p>Mediocampista</p>
+                            <h3>ALAN BERSIA</h3>
+                            <h2 class="numeros display-4">10</h2>
+                            </div>
+                            <div id="fondo-icono" class="d-flex flex-row justify-content-center">
+                                <div class="red p-4">
+                                    <a href="https://facebook.com/alan.bersia" target="blank">
+                                        <i id="icono" class="fab fa-facebook-square"></i>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="https://twitter.com/home" target="blank">
+                                            <i id="icono" class="fab fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="#" target="blank">
+                                            <i id="icono" class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
 
+                                
+                            
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                </div>
+                </div>
+                </div>
+    
+
+            </section>
 
 
 
