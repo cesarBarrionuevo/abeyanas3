@@ -145,10 +145,10 @@ html{ scroll-behavior: smooth}
 }
 
 
-#icono{
+#icono:hover{
      color:white;
 }
-#fondo-icono{
+#fondo-icono:hover{
      background-color:lightskyblue;
 }
 /* Animación jugadores del plantel */
