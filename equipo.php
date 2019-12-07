@@ -48,7 +48,7 @@ require_once "navbar.php";
                             <h3>ALAN BERSIA</h3>
                             <h2 class="numeros display-4">10</h2>
                             </div>
-
+                            
                             <div id="fondo-icono" class="d-flex flex-row justify-content-center">
                                 <div class="red p-4">
                                     <a href="https://facebook.com/alan.bersia" target="blank">
@@ -68,9 +68,9 @@ require_once "navbar.php";
                                             <i id="icono" class="fab fa-instagram"></i>
                                         </a>
                                     </div>
-
-
-
+                                
+                                
+                            
                             </div>
                         </div>
                     </div>
@@ -106,14 +106,14 @@ require_once "navbar.php";
                                         </a>
                                     </div>
 
-
-
+                                
+                            
                             </div>
                         </div>
                     </div>
                     </a>
                 </div>
-
+               
     <div class="col-md-3">
     <div class="card">
                         <div class="card-body jugador">
@@ -144,14 +144,14 @@ require_once "navbar.php";
                                         </a>
                                     </div>
 
-
-
+                                
+                            
                             </div>
                         </div>
                     </div>
                     </a>
                 </div>
-
+    
     <div class="col-md-3">
     <div class="card">
                         <div class="card-body jugador">
@@ -182,8 +182,8 @@ require_once "navbar.php";
                                         </a>
                                     </div>
 
-
-
+                                
+                            
                             </div>
                         </div>
                     </div>
@@ -207,7 +207,7 @@ require_once "navbar.php";
                             <h3>ALAN BERSIA</h3>
                             <h2 class="numeros display-4">10</h2>
                             </div>
-
+                            
                             <div id="fondo-icono" class="d-flex flex-row justify-content-center">
                                 <div class="red p-4">
                                     <a href="https://facebook.com/alan.bersia" target="blank">
@@ -227,9 +227,9 @@ require_once "navbar.php";
                                             <i id="icono" class="fab fa-instagram"></i>
                                         </a>
                                     </div>
-
-
-
+                                
+                                
+                            
                             </div>
                         </div>
                     </div>
@@ -265,14 +265,14 @@ require_once "navbar.php";
                                         </a>
                                     </div>
 
-
-
+                                
+                            
                             </div>
                         </div>
                     </div>
                     </a>
                 </div>
-
+               
     <div class="col-md-3">
     <div class="card">
                         <div class="card-body jugador">
@@ -303,14 +303,14 @@ require_once "navbar.php";
                                         </a>
                                     </div>
 
-
-
+                                
+                            
                             </div>
                         </div>
                     </div>
                     </a>
                 </div>
-
+    
     <div class="col-md-3">
     <div class="card">
                         <div class="card-body jugador">
@@ -341,8 +341,8 @@ require_once "navbar.php";
                                         </a>
                                     </div>
 
-
-
+                                
+                            
                             </div>
                         </div>
                     </div>
@@ -351,7 +351,7 @@ require_once "navbar.php";
                 </div>
                 </div>
                 </div>
-
+    
 
             </section>
 
@@ -360,7 +360,7 @@ require_once "navbar.php";
 
 
 
-
+  
     <!--SCRIPT NAVBAR-->
     <script>
       window.onscroll = function () { myFunction() };
