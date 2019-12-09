@@ -2,22 +2,19 @@
   <header>
     <!-- Primer encabezado-->
       <div class="row partidos m-auto">
-        <div class="leyenda1"><strong style="color:red;">próximo partido</strong></div>
+        <p class="leyenda1"><strong style="color:red;">próximo partido</strong></p>
           <div class="vertical-line" ></div>
-        <div class="leyenda2">liga venadense</div>
+        <p class="leyenda2">liga venadense</p>
           <div class="vertical-line" ></div>
-        <div class="leyenda2"><strong>30/11/2019</strong></div>
+        <p class="leyenda2"><strong>30/11/2019</strong></p>
           <div class="vertical-line" ></div>
         <p class="leyenda2"><strong>17:00 hs</strong></p>
           <div class="vertical-line" ></div>
         <p class="leyenda2">visitante</p>
         <p class="img-header1"><img src="img/IMG_EscuEquipos/CSDChapuy.png" style="width: 16%;" alt=""></p>
         <p class="img-header1"><img src="img/IMG_EscuEquipos/talleres.png" style="width: 16%;" alt=""></p>
-          <div class=" row m-auto">
-            <a class="img-sponsor-header"href="http://www.famago.com.ar"><img src="img/sponsor.png"
-            style="width: 70%;" alt=""></a>
-          </div>
-    <!--      -->
+    <!--      <a class="img-sponsor-header"href="http://www.famago.com.ar"><img src="img/sponsor.png"
+    style="width: 70%;" alt=""></a>-->
       </div>
 
       <!-- Segundo encabezado-->
