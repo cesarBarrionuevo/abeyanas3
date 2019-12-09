@@ -12,25 +12,50 @@
 }
 .partidos{
      width: 100%;
-     height: 40px;
+     height: 35px;
      color: white;
      background: rgb(8, 7, 7);
 
 }
-.leyenda{
+.leyenda1{
      font-family: 'Ubuntu', sans-serif;
      font-size: 11px;
-     padding-left: 20px;
+     padding-left: 100px;
+     padding-right: 12px;
+     padding-top: 10px;
+     text-transform: uppercase;
+}
+.leyenda2{
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 11px;
+     padding-left: 10px;
+     padding-right: 10px;
      padding-top: 10px;
      text-transform: uppercase;
 }
 .encabezaLogo{
      padding-top: 15px;
-
 }
 .texto-borde{
      -webkit-text-stroke: 1px red;
      color: transparent;
+}
+div.vertical-line{
+      width: 1px;
+      background-color: hsl(120, 0%, 50%); /* Color de linea */
+      height: 100%;
+      float: left;
+}
+.img-header1{
+      margin-left: 15px;
+      margin-top: 2px;
+      margin-right: -170px;
+}
+.img-sponsor-header{
+      margin-top: 3px;
+
+      float: right;
+
 }
 
 /*Animacion linea debajo de cada elemento de la navbar */
@@ -141,7 +166,7 @@ html{ scroll-behavior: smooth}
      color: gray;
      font-weight: bold;
      text-align: right;
-     
+
 }
 
 
@@ -153,10 +178,10 @@ html{ scroll-behavior: smooth}
 }
 /* Animación jugadores del plantel */
 .jugador:hover{
-     
+
 	-webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
              animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-             
+
 }
 
 @-webkit-keyframes scale-down-center {
@@ -179,4 +204,3 @@ html{ scroll-behavior: smooth}
                transform: scale(0.9);
      }
    }
-   
