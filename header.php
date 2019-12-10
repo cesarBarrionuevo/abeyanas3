@@ -1,5 +1,5 @@
 <div class="d-none d-md-block">
-  <header>
+  <header id="header">
     <!-- Primer encabezado-->
       <div class="row partidos m-auto">
         <p class="leyenda1"><strong style="color:red;">próximo partido</strong></p>
@@ -20,7 +20,7 @@
       <!-- Segundo encabezado-->
       <div class="container-fluid">
         <div class="row encabezaLogo">
-          <a href="#">
+          <a href="index.php">
             <p> <img src="img/header2.jpg" style="width: 100%;" alt="imagen"></p>
           </a>
         </div>

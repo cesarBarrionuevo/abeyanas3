@@ -6,17 +6,17 @@
         </button>
         <div class="collapse navbar-collapse " id="navbarNav">
             <ul class="navbar-nav">
-                <li class="d-none" id="escudo">
+                <li class="d-none nav-item" id="escudo">
                   <!--<p class="texto-borde"><strong>ClubSportivo</strong>Avellaneda-->
-                  <a href="#"><img src="img/escudo.png" width="40" height="40"
+                  <a href="#header"><img src="img/escudo.png" width="40" height="40"
                           class="d-inline-block align-top"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">INICIO</a>
+                    <a class="nav-link" href="index.php">INICIO</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">NOTICIAS</a>
-                   <ul class="submenu m-auto">
+                   <ul class="submenu">
                     <li><a href="">NOTICIAS 1</a></li>
                     <li><a href="">NOTICIAS 2</a></li>
                     <li><a href="">NOTICIAS 3</a></li>
@@ -27,7 +27,7 @@
                     <ul class="submenu">
                         <li><a href="">Fútbol Masculino</a>
                         <ul class="sub-submenu">
-                        <li><a href="">Primera División</a></li>
+                        <li><a href="equipo.php">Primera División</a></li>
                         <li><a href="">Cuarta Especial</a></li>  
                         </ul>
                         </li>

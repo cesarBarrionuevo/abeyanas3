@@ -7,7 +7,10 @@
      background: rgb(255, 255, 255);
      height: 50px;
      margin-bottom: 0px;
+     
+     
 }
+
 .fondoMenu{
      background: #CC1E0E;
 }
@@ -63,11 +66,14 @@ div.vertical-line{
      font-family: 'Raleway', sans-serif;
      font-size: 14px;
      font-weight: bold;
+    
 }
 .nav-link{
      padding: 0 2em;
      margin: 0.3em;
      transition: all .4s;
+     
+     
 }
 
 .nav-link:hover{
@@ -75,30 +81,39 @@ div.vertical-line{
 
 }
 
+.navbar-nav .nav-item .nav-link{
+     color: black;
+}
+
 
 
 
 /*Submenu Desplegable */
 .submenu{
+     
      list-style: none;
      position: absolute;
      visibility: hidden;
      margin-bottom: 0;
      opacity: 0;
-     transition: opacity 1.5s;
+     transition:all .5s;
+     
 }
 .submenu li a{
      display: block;
      padding: 10px;
-     color: black;
+     color:   rgb(143, 143, 143);
      text-decoration: none;
      font-family: 'Raleway', sans-serif;
-     
-     width: auto;
+     background: white;
+    
+     transition: .4s;
+     width: 200px;
 }
 #navbarNav li:hover .submenu{
      visibility: visible;
      opacity: 1;
+     background: whitesmoke;
 }
 nav ul {
      margin-top: 0px;
@@ -108,17 +123,39 @@ nav ul {
      background:rgba(206, 214, 224,.5);
      color: red;
 }
+
 .sub-submenu{
-     display: none;
-    
+     list-style: none;
+     position: absolute;
+     visibility: hidden;
+     margin-bottom: 0;
+     opacity: 0;
+     left: 100%;
+     top: 0;
+     transition: opacity 1.5s;
+     width: 200px;
+}
+.sub-submenu li a{
+     display: block;
+     padding: 10px;
+     color: rgb(143, 143, 143);
+     text-decoration: none;
+     font-family: 'Raleway', sans-serif;
+     background: white;
+     width: 100%;
+     
     
 }
-.submenu li:hover > .sub-submenu{
-    display: block;
-    position:absolute;
-    right:-100%;
-    top: 0%; 
+
+#navbarNav .submenu li:hover > .sub-submenu{
+     visibility: visible;
+     opacity: 1;
+     background: whitesmoke;
 }
+
+ 
+
+
 
 
 
