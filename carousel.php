@@ -1,4 +1,3 @@
-
 <div class="micarousel">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Carousel indicators -->

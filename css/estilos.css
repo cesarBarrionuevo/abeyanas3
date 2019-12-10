@@ -4,8 +4,9 @@
 }
 
 .navbar{
-     background: rgb(196, 195, 195);
+     background: rgb(255, 255, 255);
      height: 50px;
+     margin-bottom: 0px;
 }
 .fondoMenu{
      background: #CC1E0E;
@@ -50,12 +51,15 @@
 
 }
 
+
+
+
 /*Submenu Desplegable */
 .submenu{
      list-style: none;
      position: absolute;
      visibility: hidden;
-
+     margin-bottom: 0;
      opacity: 0;
      transition: opacity 1.5s;
 }
@@ -65,17 +69,34 @@
      color: black;
      text-decoration: none;
      font-family: 'Raleway', sans-serif;
-     border: 1px solid rgb(14, 40, 59);
-     width: 280px;
+     
+     width: auto;
 }
 #navbarNav li:hover .submenu{
      visibility: visible;
      opacity: 1;
 }
+nav ul {
+     margin-top: 0px;
+     margin-bottom: 0;
+    }
 .submenu li a:hover{
      background:rgba(206, 214, 224,.5);
      color: red;
 }
+.sub-submenu{
+     display: none;
+    
+    
+}
+.submenu li:hover > .sub-submenu{
+    display: block;
+    position:absolute;
+    right:-100%;
+    top: 0%; 
+}
+
+
 
 /* Animación para la navbar cuando se junta con el escudo */
 .animacion{
@@ -118,17 +139,20 @@ html{ scroll-behavior: smooth}
 .carousel-inner img {
     width: 100%;
   }
+  /* Lo comento para que el carousel quede pegado a la navbar
   .carousel{
       margin-top: 40px;
       margin-bottom: 40px;
   }
+  */
   .carousel-item{
       text-align: center;
       max-height: 500px;
       width: 100%;
   }
   .micarousel{
-  	margin: 0px;
+       margin: 0px;
+       margin-bottom: 0px;
   }
 
   /*Fin carousel index*/
