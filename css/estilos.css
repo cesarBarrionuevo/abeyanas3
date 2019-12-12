@@ -294,7 +294,7 @@ html{ scroll-behavior: smooth}
      color: #8b8b8c;
      font: 500 12px/14px 'Roboto',Helvetica,sans-serif;
      text-align: center;
-     margin-top: 8%;
+     padding-bottom: 30px;
    }
    footer .redes span{
      color: #8b8b8c;
@@ -312,6 +312,8 @@ html{ scroll-behavior: smooth}
    }
    footer .redes-ul{
         float: right;
+        padding-right: 30px;
+        padding-top: 20px;
    }
    .redes-ul{
         top: 5px;
