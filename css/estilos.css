@@ -276,22 +276,16 @@ html{ scroll-behavior: smooth}
 
 
   footer .imagen-footer{
-     padding-top: 20px;           
-    display: inline block;
-
+     padding-top: 20px;
    }
-   footer .imagen-footer a{
+
+  footer .imagen-footer a{
      float: left;
-     position: relative;
-     top: -23px;
-     z-index: 0;
      margin-left: 5%;
    }
 
    .imagen-footer h3{
      float: left;
-
-
      margin-top: 30px;
      margin-left: 20px;
    }
@@ -306,13 +300,15 @@ html{ scroll-behavior: smooth}
      color: #8b8b8c;
      font: italic 14px/14px 'Roboto',Helvetica,sans-serif;
      margin-top: 21px;
-     float: left;
+     float: center;
    }
 
    footer .redes{
      float: right;
-     margin-top: 21px;
-     margin-right: 7%;
+     padding-right: 30px;
+     padding-top: 10px;
+     /*margin-top: 2px;
+     margin-right: 7%;*/
    }
    footer .redes-ul{
         float: right;
@@ -322,8 +318,8 @@ html{ scroll-behavior: smooth}
         position: relative;
    }
    footer .redes-ul li{
-     float: left;
-     margin-left: 22px;
+     float: right;
+     margin-left: 12px;
    }
 
    #redes-footer{
