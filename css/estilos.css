@@ -7,8 +7,8 @@
      background: rgb(255, 255, 255);
      height: 50px;
      margin-bottom: 0px;
-     
-     
+
+
 }
 
 .fondoMenu{
@@ -66,14 +66,14 @@ div.vertical-line{
      font-family: 'Raleway', sans-serif;
      font-size: 14px;
      font-weight: bold;
-    
+
 }
 .nav-link{
      padding: 0 2em;
      margin: 0.3em;
      transition: all .4s;
-     
-     
+
+
 }
 
 .nav-link:hover{
@@ -90,14 +90,14 @@ div.vertical-line{
 
 /*Submenu Desplegable */
 .submenu{
-     
+
      list-style: none;
      position: absolute;
      visibility: hidden;
      margin-bottom: 0;
      opacity: 0;
      transition:all .3s;
-     
+
 }
 .submenu li a{
      display: block;
@@ -106,7 +106,7 @@ div.vertical-line{
      text-decoration: none;
      font-family: 'Raleway', sans-serif;
      background: white;
-    
+
      transition: .4s;
      width: 200px;
 }
@@ -143,8 +143,8 @@ nav ul {
      font-family: 'Raleway', sans-serif;
      background: white;
      width: 100%;
-     
-    
+
+
 }
 
 #navbarNav .submenu li:hover > .sub-submenu{
@@ -153,7 +153,7 @@ nav ul {
      background: whitesmoke;
 }
 
- 
+
 
 
 
@@ -268,18 +268,17 @@ html{ scroll-behavior: smooth}
    /*Footer */
    footer{
      background: url(../img/fondo-footer.jpg) no-repeat center top;
-   
-    
+
+
     border-top: 1.5px solid red;
-    
+
    }
-   
- 
+
+
   footer .imagen-footer{
-       
-       
+     padding-top: 20px;           
     display: inline block;
-   
+
    }
    footer .imagen-footer a{
      float: left;
@@ -291,8 +290,8 @@ html{ scroll-behavior: smooth}
 
    .imagen-footer h3{
      float: left;
-     
-     
+
+
      margin-top: 30px;
      margin-left: 20px;
    }
@@ -326,7 +325,7 @@ html{ scroll-behavior: smooth}
      float: left;
      margin-left: 22px;
    }
-   
+
    #redes-footer{
         color: red;
    }
@@ -337,7 +336,7 @@ html{ scroll-behavior: smooth}
      color: #8b8b8c;
      font: 500 12px/14px 'Roboto',Helvetica,sans-serif;
      text-align: center;
-     
+
    }
 
    /*
@@ -348,7 +347,7 @@ html{ scroll-behavior: smooth}
           bottom: 0;
          left: 0;
           width: 100%;
-          
+
           color: white;
    }
 }
