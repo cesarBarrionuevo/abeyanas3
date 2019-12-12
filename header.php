@@ -21,7 +21,7 @@
       <div class="container-fluid">
         <div class="row encabezaLogo">
           <a href="index.php">
-            <div> <img src="img/header5.jpg" style="width: 100%;" alt="imagen"></div>
+            <div class="headerimg"> <img src="img/header5.jpg" style="width: 100%;" alt="imagen"></div>
           </a>
         </div>
       </div>
