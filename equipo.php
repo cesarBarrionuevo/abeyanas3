@@ -357,7 +357,8 @@ require_once "navbar.php";
 
 
 
-
+    <!--FOOTER-->
+    <?php require_once "footer.php" ?>
 
 
   
@@ -366,7 +367,7 @@ require_once "navbar.php";
       window.onscroll = function () { myFunction() };
 
 function myFunction() {
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    if (document.body.scrollTop > 245 || document.documentElement.scrollTop > 245) {
         document.getElementById("escudo").className = "";
         var x = document.getElementsByClassName("nav-item");
         var i;

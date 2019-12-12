@@ -96,7 +96,7 @@ div.vertical-line{
      visibility: hidden;
      margin-bottom: 0;
      opacity: 0;
-     transition:all .5s;
+     transition:all .3s;
      
 }
 .submenu li a{
@@ -132,7 +132,7 @@ nav ul {
      opacity: 0;
      left: 100%;
      top: 0;
-     transition: opacity 1.5s;
+     transition: opacity 1s;
      width: 200px;
 }
 .sub-submenu li a{
@@ -264,3 +264,92 @@ html{ scroll-behavior: smooth}
                transform: scale(0.9);
      }
    }
+
+   /*Footer */
+   footer{
+     background: url(../img/fondo-footer.jpg) no-repeat center top;
+   
+    
+    border-top: 1.5px solid red;
+    
+   }
+   
+ 
+  footer .imagen-footer{
+       
+       
+    display: inline block;
+   
+   }
+   footer .imagen-footer a{
+     float: left;
+     position: relative;
+     top: -23px;
+     z-index: 0;
+     margin-left: 5%;
+   }
+
+   .imagen-footer h3{
+     float: left;
+     
+     
+     margin-top: 30px;
+     margin-left: 20px;
+   }
+
+   footer .copyright{
+     color: #8b8b8c;
+     font: 500 12px/14px 'Roboto',Helvetica,sans-serif;
+     text-align: center;
+     margin-top: 8%;
+   }
+   footer .redes span{
+     color: #8b8b8c;
+     font: italic 14px/14px 'Roboto',Helvetica,sans-serif;
+     margin-top: 21px;
+     float: left;
+   }
+
+   footer .redes{
+     float: right;
+     margin-top: 21px;
+     margin-right: 7%;
+   }
+   footer .redes-ul{
+        float: right;
+   }
+   .redes-ul{
+        top: 5px;
+        position: relative;
+   }
+   footer .redes-ul li{
+     float: left;
+     margin-left: 22px;
+   }
+   
+   #redes-footer{
+        color: red;
+   }
+   #redes-footer:hover{
+     color: white;
+   }
+   footer .desarrolladores{
+     color: #8b8b8c;
+     font: 500 12px/14px 'Roboto',Helvetica,sans-serif;
+     text-align: center;
+     
+   }
+
+   /*
+   @media screen and (max-width:1200px) and (min-width:0px) {
+     .footer_ab {
+          background: red;
+          position: fixed;
+          bottom: 0;
+         left: 0;
+          width: 100%;
+          
+          color: white;
+   }
+}
+*/
