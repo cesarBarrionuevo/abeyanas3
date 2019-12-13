@@ -231,6 +231,10 @@ html{ scroll-behavior: smooth}
 
 }
 
+#fondo-icono{
+     text-align: center;
+}
+
 
 #icono:hover{
      color:white;
