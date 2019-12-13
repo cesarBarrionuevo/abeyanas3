@@ -42,12 +42,8 @@
    <?php require_once "navbar.php" ?>
    <?php require_once "carousel.php" ?>
 
-    <div class="container">
-      <div class="container-noticias">
-        asdasdasgfaggA
-      </div>
-    </div>
-
+    <!-- section -->
+    <?php require_once "section.php" ?>
     <!--FOOTER-->
     <?php require_once "footer.php" ?>
 
