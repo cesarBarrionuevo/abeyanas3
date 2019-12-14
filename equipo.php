@@ -51,7 +51,10 @@ require_once "navbar.php";
         if($resultado= mysqli_query($miconexion, $miconsulta)){
             while ($registro= mysqli_fetch_assoc($resultado)){
                 $id_jugador=$registro['codJug'];
-                
+                $foto_cara=$registro['fotoCara'];
+                if($foto_cara==null){
+                    $foto_cara="person.png";
+                }
        
         ?>
     <div class="col-lg-3">
@@ -59,7 +62,7 @@ require_once "navbar.php";
       <div class="card" style="margin-top: 2%;">
                         <div class="card-body jugador">
                             <a href="jugador.php?id=<?php echo "$id_jugador" ?>" style="text-decoration:none; color:black" title="Información acerca del jugador">
-                            <img src="img/person.png" class="img-fluid rounded-circle" style="width: 50%;display:block;margin:auto;" alt="person">
+                            <img src="img/<?php echo "$foto_cara"; ?>" class="img-fluid rounded-circle" style="width: 50%;display:block;margin:auto;" alt="person">
                             <hr>
                             
                             <?php if($registro['codPosi']==1){echo "<p>Arquero</p>";}elseif($registro['codPosi']==2){echo "<p>Defensor</p>";}elseif($registro['codPosi']==3){echo "<p>Mediocampista</p>";}elseif($registro['codPosi']==4){echo "<p>Delantero</p>";} ?>
@@ -130,7 +133,7 @@ require_once "navbar.php";
       window.onscroll = function () { myFunction() };
 
 function myFunction() {
-    if (document.body.scrollTop > 245 || document.documentElement.scrollTop > 245) {
+    if (document.body.scrollTop > 142 || document.documentElement.scrollTop > 142) {
         document.getElementById("escudo").className = "";
         var x = document.getElementsByClassName("nav-item");
         var i;

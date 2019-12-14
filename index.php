@@ -56,7 +56,7 @@
       window.onscroll = function () { myFunction() };
 
 function myFunction() {
-    if (document.body.scrollTop > 245 || document.documentElement.scrollTop > 245) {
+    if (document.body.scrollTop > 142 || document.documentElement.scrollTop > 142) {
         document.getElementById("escudo").className = "";
         var x = document.getElementsByClassName("nav-item");
         var i;
