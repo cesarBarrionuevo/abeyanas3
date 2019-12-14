@@ -1,4 +1,5 @@
      <footer class="py-1">
+         <div class="container-fluid">
           <div class="row">
                <div class="imagen-footer col-lg-9 col-md-9 col-sm-9 col-12">
                     <a href="#">
@@ -20,6 +21,7 @@
                              </li>
                          </ul>
                </div>
+               
      <!--          <div class="imagen-footer">
                     <a href="#">
                     <img class="img-fluid" src="img/escudoFooter.png" alt="escudoFooter.png"></a>
@@ -56,5 +58,5 @@
               <div class="desarrolladores pb-2">
                  <strong><p>Sitio desarrollado por Abeyabas3 ®</p></strong>
              </div>
-
+             </div> 
    </footer>

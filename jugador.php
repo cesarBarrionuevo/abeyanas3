@@ -23,6 +23,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilo_jugador.css">
+    <link rel="stylesheet" href="css/estilo-fondo.css">
     
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
@@ -30,6 +31,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
 </head>
 <body>
+    
 
 
     <!--HEADER-->
@@ -39,7 +41,7 @@
     <!--NAVEGACIÓN-->
 
    <?php require_once "navbar.php" ?>
-
+<section class="imagen-de-fondo">
    <?php
 $id=$_GET['id'];
 $miconexion= mysqli_connect("localhost", "root", "", "avellaneda");
@@ -62,17 +64,17 @@ $miconexion= mysqli_connect("localhost", "root", "", "avellaneda");
 ?>
 
 <div class="ficha container">
-<h1 class="display-4" style="text-align: center;">Ficha del Jugador</h1>
+<h2 class="titulo-jugador" style="text-align: left;">Ficha del Jugador</h2>
 <div class="row">
         <div class="foto-jugador col-6 col-sm-12 col-lg-6">
-    <div class="imagen-jugador py-1">
-        <span class="contiene-imagen">
-    <img src="img/<?php echo $foto_torso ?> " style="width: 60%;display:block;margin:auto;" alt="">
-    </span>
-    </div>
+            <div class="imagen-jugador py-1">
+                <span class="contiene-imagen">
+                <img src="img/fondos-prueba/Messi.png" style="margin:auto;" alt="">
+                </span>
+            </div>
         </div>
-            <div class="col-6 col-sm-12 col-lg-6">
-                <div class="ficha-jugador">
+        <div class="col-6 col-sm-12 col-lg-6">
+            <div class="ficha-jugador">
                     <h2 class="titulo-jugador"><?php echo $registro['nombre'] . " " . $registro['apellido']; ?></h2>
                     <h3 class="posicion-jugador"><?php if($registro['codPosi']==1){echo "<p>Arquero</p>";}elseif($registro['codPosi']==2){echo "<p>Defensor</p>";}elseif($registro['codPosi']==3){echo "<p>Mediocampista</p>";}elseif($registro['codPosi']==4){echo "<p>Delantero</p>";} ?></h3>
                     <dl class="atributos">
@@ -89,9 +91,9 @@ $miconexion= mysqli_connect("localhost", "root", "", "avellaneda");
                         <dt>Procedencia: </dt>
                         <dd><?php echo $registro['procedencia']; ?></dd>
                     </dl>
-                    <span class="boton">
-                    <a class="btn btn-lg btn-block" href="equipo.php" title="Volver al plantel">VOLVER A EL PLANTEL</a>
-                    </span>
+                    
+                    <a class="btn btn-outline-danger btn-lg btn-block" href="equipo.php" title="Volver al plantel">VOLVER A EL PLANTEL</a>
+                    
                 </div>
             </div>
 
@@ -104,7 +106,7 @@ $miconexion= mysqli_connect("localhost", "root", "", "avellaneda");
             ?>
 
 
-
+</section>
 
    <!--FOOTER-->
    <?php require_once "footer.php" ?>

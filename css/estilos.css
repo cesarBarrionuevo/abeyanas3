@@ -1,4 +1,4 @@
-*{
+*{   
      margin: 0px;
      padding: 0px;
 }
@@ -55,8 +55,8 @@ div.vertical-line{
 }
 .img-sponsor-header{
       margin-right: -150px;
-      margin-left: 320px;
-      margin-bottom: 15px;
+      margin-left: 60vh;
+      margin-bottom: 15px;;
 }
 /*Tamaño segundo header*/
 .headerimg{
@@ -382,6 +382,7 @@ html{ scroll-behavior: smooth}
      height: 3px; 
      text-align: center;
      background-image: -webkit-linear-gradient(left,white,red,white);
+     position: fixed;
 }
 
 .div{
@@ -398,30 +399,25 @@ html{ scroll-behavior: smooth}
      height:0;}
 
 .tFijo{/*tamaño fijo imagen(resultado partido)*/
-     width:278px; 
-     height:150px;
+     width:100%; 
+     height:200px;
 
 
 }
 .tFijoC{/*tamaño fijo de la carta(resultado partido)*/
-     width:280px; 
-     height: 350px;
-     max-height:350px
+     width:100%; 
+     height: 420px;
+   max-height:420px;
      
 
 }
-
-.prueba{
-     width: 280px;
-     max-width: 280px;
-     height: 100px;
-     max-height: 100px;
+@media (max-width: 767px){
+     .tFijo{
+          padding-bottom: 20px;
+     }
 }
-.leyenda3{
-     font-family: 'Ubuntu', sans-serif;
-     /*text-shadow: red 3px 3px 4px;*/
 
-}
+
 
 .colorR {
      background-color: #c10f21!important;

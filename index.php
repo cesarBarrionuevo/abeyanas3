@@ -25,6 +25,8 @@
         crossorigin="anonymous"></script>
     <!--CSS-->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilo_jugador.css">
+
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
@@ -43,10 +45,12 @@
    <?php require_once "carousel.php" ?>
 
     <!-- section -->
+    <div>
     <?php require_once "section.php" ?>
+    </div>
     <!--FOOTER-->
     <?php require_once "footer.php" ?>
-
+    
     <!--SCRIPT NAVBAR-->
     <script>
       window.onscroll = function () { myFunction() };
