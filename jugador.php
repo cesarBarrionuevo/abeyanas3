@@ -22,9 +22,12 @@
         crossorigin="anonymous"></script>
     <!--CSS-->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilo_jugador.css">
+    
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -37,12 +40,70 @@
 
    <?php require_once "navbar.php" ?>
 
-
-<?php
+   <?php
 $id=$_GET['id'];
+$miconexion= mysqli_connect("localhost", "root", "", "avellaneda");
+        
+        //Compruebo conexion
+        if(!$miconexion){
+            echo "La conexion ha fallado: ";
+            exit();
+        }
+        $miconsulta="SELECT * FROM plantel where codJug='". $id . "'";
+        if($resultado= mysqli_query($miconexion, $miconsulta)){
+            while ($registro= mysqli_fetch_assoc($resultado)){
+                
+                $foto_torso=$registro['fotoDorso'];
+                if($foto_torso==null){
+                    $foto_torso="jugador-none.png";
+                }
 
-echo "$id";
+
 ?>
+
+<div class="ficha container">
+<h1 class="display-4" style="text-align: center;">Ficha del Jugador</h1>
+<div class="row">
+        <div class="foto-jugador col-6 col-sm-12 col-lg-6">
+    <div class="imagen-jugador py-1">
+        <span class="contiene-imagen">
+    <img src="img/<?php echo $foto_torso ?> " style="width: 60%;display:block;margin:auto;" alt="">
+    </span>
+    </div>
+        </div>
+            <div class="col-6 col-sm-12 col-lg-6">
+                <div class="ficha-jugador">
+                    <h2 class="titulo-jugador"><?php echo $registro['nombre'] . " " . $registro['apellido']; ?></h2>
+                    <h3 class="posicion-jugador"><?php if($registro['codPosi']==1){echo "<p>Arquero</p>";}elseif($registro['codPosi']==2){echo "<p>Defensor</p>";}elseif($registro['codPosi']==3){echo "<p>Mediocampista</p>";}elseif($registro['codPosi']==4){echo "<p>Delantero</p>";} ?></h3>
+                    <dl class="atributos">
+                        <dt>Fecha de Nacimiento: </dt>
+                        <dd><?php echo $registro['fecNac']; ?></dd>
+                        <dt>Lugar de Nacimiento: </dt>
+                        <dd><?php echo $registro['lugarNac']; ?></dd>
+                        <dt>Nacionalidad: </dt>
+                        <dd><?php echo $registro['nacionalidad']; ?></dd>
+                        <dt>Altura: </dt>
+                        <dd><?php echo $registro['altura'] . "cm" ?></dd>
+                        <dt>Peso: </dt>
+                        <dd><?php echo $registro['peso'] . "kg" ?></dd>
+                        <dt>Procedencia: </dt>
+                        <dd><?php echo $registro['procedencia']; ?></dd>
+                    </dl>
+                    <span class="boton">
+                    <a class="btn btn-lg btn-block" href="equipo.php" title="Volver al plantel">VOLVER A EL PLANTEL</a>
+                    </span>
+                </div>
+            </div>
+
+</div>
+
+</div>
+            <?php 
+            } 
+            }
+            ?>
+
+
 
 
    <!--FOOTER-->
@@ -53,7 +114,7 @@ echo "$id";
   window.onscroll = function () { myFunction() };
 
 function myFunction() {
-if (document.body.scrollTop > 245 || document.documentElement.scrollTop > 245) {
+if (document.body.scrollTop > 142 || document.documentElement.scrollTop > 142) {
     document.getElementById("escudo").className = "";
     var x = document.getElementsByClassName("nav-item");
     var i;

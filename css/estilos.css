@@ -356,3 +356,80 @@ html{ scroll-behavior: smooth}
    }
 }
 */
+
+/*Estilos section*/
+
+#secPartido{
+     width: 30%;
+    
+
+}
+
+.section{
+
+     background:-webkit-linear-gradient(bottom,rgb(88, 0, 0),red,rgb(126, 22, 22));
+     opacity: 0.9;
+   
+
+}
+.section2{
+     background:-webkit-linear-gradient(bottom,white,grey);
+     opacity: 0.9;
+}
+.hrRojo { margin-bottom: 0px;
+     margin-top: 0px;
+     border: 0; 
+     height: 3px; 
+     text-align: center;
+     background-image: -webkit-linear-gradient(left,white,red,white);
+}
+
+.div{
+     background: rgb(143, 143, 143);
+
+}
+
+ 
+
+ .hr {margin-top: 5px;
+      border: 1px; 
+     border-top: 3px solid #999; 
+     border-bottom: 1px solid #333; 
+     height:0;}
+
+.tFijo{/*tamaño fijo imagen(resultado partido)*/
+     width:278px; 
+     height:150px;
+
+
+}
+.tFijoC{/*tamaño fijo de la carta(resultado partido)*/
+     width:280px; 
+     height: 350px;
+     max-height:350px
+     
+
+}
+
+.prueba{
+     width: 280px;
+     max-width: 280px;
+     height: 100px;
+     max-height: 100px;
+}
+.leyenda3{
+     font-family: 'Ubuntu', sans-serif;
+     /*text-shadow: red 3px 3px 4px;*/
+
+}
+
+.colorR {
+     background-color: #c10f21!important;
+ }
+
+
+
+
+
+
+

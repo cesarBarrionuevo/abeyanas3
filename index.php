@@ -43,6 +43,7 @@
   <?php require_once "navbar.php" ?>
   <?php require_once "carousel2.php" ?>
 
+<<<<<<< HEAD
   <div class="container">
     <div class="container-noticias">
       asdasdasgfaggA
@@ -51,6 +52,36 @@
 
   <!--FOOTER-->
   <?php require_once "footer.php" ?>
+=======
+    <!-- section -->
+    <?php require_once "section.php" ?>
+    <!--FOOTER-->
+    <?php require_once "footer.php" ?>
+
+    <!--SCRIPT NAVBAR-->
+    <script>
+      window.onscroll = function () { myFunction() };
+
+function myFunction() {
+    if (document.body.scrollTop > 142 || document.documentElement.scrollTop > 142) {
+        document.getElementById("escudo").className = "";
+        var x = document.getElementsByClassName("nav-item");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].classList.add('animacion');
+        }
+
+    } else {
+        document.getElementById("escudo").className = "d-none";
+        var x = document.getElementsByClassName("nav-item");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].classList.remove('animacion');
+        }
+    }
+}
+    </script>
+>>>>>>> 258d498d23e98f388cfd7a6a38340bccbfb094f5
 
   <!--SCRIPT NAVBAR-->
   <script src="js/funciones.js"></script>

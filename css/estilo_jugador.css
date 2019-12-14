@@ -1,0 +1,83 @@
+.ficha{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.foto-jugador{
+    background-color: gray;
+}
+.imagen_jugador{
+    margin-top: auto;
+    
+}
+@media (max-width: 767px){
+.imagen_jugador {
+    
+    height: 515px;
+}
+}
+.contiene-imagen{
+    height: 100%;
+    width: 100%;
+    
+  
+}
+.ficha-jugador{
+    background: url(../img/fondo-ficha.jpg) no-repeat;
+    height: 100%;
+    width: 100%;
+    box-shadow: 2px 2px 10px #666;        
+   
+    
+}
+.titulo-jugador{
+    font-family: 'Alatsi', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    line-height: 30px;
+    padding-top: 30px;
+}
+.posicion-jugador{
+    color: rgb(182, 2, 2) ;
+    font-family: 'Alatsi', sans-serif;
+    text-align: center;
+    padding: 32px 18px 0;
+    font-size: 20px;
+    line-height: 26px;
+}
+.atributos{
+    padding: 16px 18px 0 38px;
+    margin-bottom: 42px;
+}
+.atributos {
+    font-size: 17px;
+    
+}
+.atributos dt{
+    position: relative;
+    float: left;
+    font-weight: 300;
+    margin-right: 5px;
+    display: list-item; 
+    list-style-type: disc; 
+    color: rgb(160, 25, 25);
+    
+}
+.atributos dd{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 18px;
+    
+}
+
+
+.btn{
+    
+    margin-top: 20%;
+    border-color: #ffffff;
+    color: white;
+    background-color: rgb(182, 2, 2);
+    border-radius: 148px 148px 148px 148px;
+    -moz-border-radius: 148px 148px 148px 148px;
+    -webkit-border-radius: 148px 148px 148px 148px;
+    border: 13px double #ffffff;
+}
