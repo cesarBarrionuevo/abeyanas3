@@ -98,7 +98,8 @@ $miconexion= mysqli_connect("localhost", "root", "", "avellaneda");
 </div>
 
 </div>
-            <?php } 
+            <?php 
+            } 
             }
             ?>
 
