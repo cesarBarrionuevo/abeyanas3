@@ -26,6 +26,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilo_jugador.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
@@ -42,7 +43,7 @@
     <!--NAVEGACIÓN-->
 
    <?php require_once "navbar.php" ?>
-   <?php require_once "carousel.php" ?>
+   <?php require_once "carousel2.php" ?>
 
     <!-- section -->
     <div>
