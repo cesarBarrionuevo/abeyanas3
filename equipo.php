@@ -20,18 +20,29 @@
         crossorigin="anonymous"></script>
     <!--CSS-->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilo-fondo.css">
+    
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
+    
 <?php require_once "header.php";
+?>
+
+<?php
 require_once "navbar.php";
 ?>
-<br><br>
+<section class="imagen-de-fondo">
+
+
 <div class="container">
-<h1 class="display-4">El Plantel- <strong>PRIMERA DIVISIÓN</strong></h1>
+<h1 class="titulo-jugador">Plantel Masculino- <strong>PRIMERA DIVISIÓN</strong></h1>
+
 <img class="mx-auto d-block" src="img/av3.jpeg" alt="">
+
+
 </div>
 <section class="text-center">
 <form action="" method="get">
@@ -70,7 +81,7 @@ require_once "navbar.php";
                             <?php echo "<h2 class='numeros display-4'>" . $registro['dorsal'] . "</h2>"; ?>
                             </div>
                             
-
+                            
                             <div id="fondo-icono" class="d-flex flex-row justify-content-center">
                             <?php if($registro['facebook']!= null){
                                 $facebook=$registro['facebook'];
@@ -121,11 +132,11 @@ require_once "navbar.php";
                 </section>
    
            
-
-
+               
+                
+            </section>
     <!--FOOTER-->
     <?php require_once "footer.php" ?>
-
 
   
     <!--SCRIPT NAVBAR-->

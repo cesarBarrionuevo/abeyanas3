@@ -3,85 +3,88 @@
 <section class="section">
   <!-- Card -->
   <div class="container pb-4">
-    <h6 class="display-5 text-center pt-4 pb-2 leyenda3" style="color: white">Resultado últimos partidos:</h6>
+    <h4 class="roboto text-center pt-4 pb-2 leyenda3" style="color: white">ÚLTIMOS RESULTADOS:</h4>
     <hr>
-    <div class="row"><!-- fila-Principal-->
-      <div class="col-md-4"><!-- primer-columna-->
+    <div class="row text-center"><!-- fila-Principal-->
+      <div class="col-md-4 col-12 col-sm-12 col-lg-4 text-center"><!-- primer-columna-->
         <div class="card jugador tFijoC"><!-- tFijo-mantiene el tamaño del contenido de la Card, jugador=hover-->
           <img class="card-img-top tFijo" src="img/av4.jpeg"><!-- tFijo-mantiene el tamño de la imagen fijo -->
           <div class="card-block p-1">
-            <h4 class="card-title text-center">Primera división</h4>
+            <h5 class="card-title roboto text-center pt-2">Primera división - Masculino</h5>
             <div class="row"><!-- fila anidada-->
-              <div class="col-4 ml-3 pl-5"><!-- priColAnidada -->
-                <img src="img/escudo.png" style="width:100%;">
+              <div class=" col-4 text-right"><!-- priColAnidada -->
+                <img src="img/escudo.png" style="width:60%;">
               </div>
               <!--fin priColAnidada-->
-              <div class="col-2 p-0 ml-2"><!-- segColAnidada -->
+              <div class="col-4 "><!-- segColAnidada -->
                 <p><strong style="font-size:20px">3 - 2</strong></p>
               </div>
               <!--fin segColAnidada-->
-              <div class="col-4 pr-5"><!--terColAnidada -->
-                <img src="img/IMG_EscuEquipos/talleres" style="width:100%;">
+              <div class="col-4 text-left"><!--terColAnidada -->
+                <img src="img/IMG_EscuEquipos/talleres" style="width:60%;">
               </div>
               <!--fin terColAnidada-->
             </div>
+            <hr>
             <!--fin filaAnidada-->
-            <p class="card-text">Gran comienzo de temporada para la primera división.</p>
-            <a href="#" class="btn btn-primary rounded-0 mb-2">Ver resumen partido</a><!--bottom-->
+            <a href="#" class="btn btn-primary rounded-0" style="margin-top: 0;">Resumen del partido</a><!--bottom-->
           </div>
         </div>
       </div>
 
-      <div class="col-md-4"><!--segunda Columna-->
-        <div class="card tFijoC jugador">
-          <img class="card-img-top tFijo" src="img/av5.jpeg">
+      <div class="col-md-4 col-12 col-sm-12 col-lg-4 text-center"><!-- primer-columna-->
+        <div class="card jugador tFijoC"><!-- tFijo-mantiene el tamaño del contenido de la Card, jugador=hover-->
+          <img class="card-img-top tFijo" src="img/av4.jpeg"><!-- tFijo-mantiene el tamño de la imagen fijo -->
           <div class="card-block p-1">
-            <h4 class="card-title" style="text-align:center;">Cuarta especial</h4>
-            <div class="row"><!--FilaAnidada-->
-              <div class="col-4 ml-3 pl-5"><!--priColAnidada-->
-                <img src="img/escudo.png" style="width:100%;">
+            <h5 class="card-title roboto text-center pt-2">Reserva - Masculino</h5>
+            <div class="row"><!-- fila anidada-->
+              <div class=" col-4 text-right"><!-- priColAnidada -->
+                <img src="img/escudo.png" style="width:60%;">
               </div>
               <!--fin priColAnidada-->
-              <div class="col-2 p-0 ml-2"><!--segColAnidada-->
-                <p><strong style="font-size:20px">2 - 0</strong></p>
+              <div class="col-4 "><!-- segColAnidada -->
+                <p><strong style="font-size:20px">3 - 2</strong></p>
               </div>
-              <!--fin ColAnidada-->
-              <div class="col-4 pr-5"><!--terColAnidada--> <!-- "por las dudas"style="text-align:center;"-->
-                <img src="img/IMG_EscuEquipos/centenario" style="width:80%;">
+              <!--fin segColAnidada-->
+              <div class="col-4 text-left"><!--terColAnidada -->
+                <img src="img/IMG_EscuEquipos/talleres" style="width:60%;">
               </div>
               <!--fin terColAnidada-->
             </div>
+            <hr>
             <!--fin filaAnidada-->
-            <p class="card-text">Gran comienzo de temporada para la primera división.</p>
-            <a href="#" class="btn btn-primary rounded-0 mb-2">Read More</a>
+            <a href="#" class="btn btn-primary rounded-0" style="margin-top: 0;">Resumen del partido</a><!--bottom-->
           </div>
         </div>
       </div>
 
-      <div class="col-md-4"><!--terColumna -->
-        <div class="card tFijoC jugador">
-          <img class="card-img-top tFijo" src="img/av2.jpeg">
+
+      <div class="col-md-4 col-12 col-sm-12 col-lg-4 text-center"><!-- primer-columna-->
+        <div class="card jugador tFijoC"><!-- tFijo-mantiene el tamaño del contenido de la Card, jugador=hover-->
+          <img class="card-img-top tFijo" src="img/av4.jpeg"><!-- tFijo-mantiene el tamño de la imagen fijo -->
           <div class="card-block p-1">
-            <h4 class="card-title" style="text-align:center;">División Femenina</h4>
-            <div class="row"><!--ColAnidada-->
-              <div class="col-4 ml-3 pl-5"><!--priColAnidada-->
-                <img src="img/escudo.png" style="width:100%;">
+            <h5 class="card-title roboto text-center pt-2">Primera división - Femenino</h5>
+            <div class="row"><!-- fila anidada-->
+              <div class=" col-4 text-right"><!-- priColAnidada -->
+                <img src="img/escudo.png" style="width:60%;">
               </div>
               <!--fin priColAnidada-->
-              <div class="col-2 p-0 ml-2"><!--segColAnidada-->
-                <p><strong style="font-size:20px">2 - 0</strong></p>
+              <div class="col-4 "><!-- segColAnidada -->
+                <p><strong style="font-size:20px">3 - 2</strong></p>
               </div>
-              <!--fin segCol-->
-              <div class="col-4 pr-5"><!--terColAnidada-->
-                <img src="img/IMG_EscuEquipos/SpBenHur" style="width:95%;">
+              <!--fin segColAnidada-->
+              <div class="col-4 text-left"><!--terColAnidada -->
+                <img src="img/IMG_EscuEquipos/talleres" style="width:60%;">
               </div>
               <!--fin terColAnidada-->
             </div>
-            <p class="card-text">Gran comienzo de temporada para la primera división.</p>
-            <a href="#" class="btn btn-primary rounded-0 mb-2">Read More</a>
+            <hr>
+            <!--fin filaAnidada-->
+            <a href="#" class="btn btn-primary rounded-0" style="margin-top: 0;">Resumen del partido</a><!--bottom-->
           </div>
         </div>
       </div>
+
 
     </div><!-- Fin-filaPrincipal -->
   </div><!-- FinContainer -->
