@@ -43,7 +43,7 @@
     <!--NAVEGACIÓN-->
 
    <?php require_once "navbar.php" ?>
-   <?php require_once "carousel2.php" ?>
+   <?php require_once "carousel.php" ?>
 
     <!-- section -->
     <div>
