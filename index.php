@@ -26,10 +26,12 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilo_jugador.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="js/carousel.js"></script>
 </head>
 
 <body>
@@ -42,7 +44,7 @@
     <!--NAVEGACIÓN-->
 
    <?php require_once "navbar.php" ?>
-   <?php require_once "carousel.php" ?>
+   <?php require_once "carousel2.php" ?>
 
     <!-- section -->
     <div>
@@ -50,30 +52,9 @@
     </div>
     <!--FOOTER-->
     <?php require_once "footer.php" ?>
-    
+
     <!--SCRIPT NAVBAR-->
-    <script>
-      window.onscroll = function () { myFunction() };
-
-function myFunction() {
-    if (document.body.scrollTop > 142 || document.documentElement.scrollTop > 142) {
-        document.getElementById("escudo").className = "";
-        var x = document.getElementsByClassName("nav-item");
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].classList.add('animacion');
-        }
-
-    } else {
-        document.getElementById("escudo").className = "d-none";
-        var x = document.getElementsByClassName("nav-item");
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].classList.remove('animacion');
-        }
-    }
-}
-    </script>
+    <script src="js/funciones.js"></script>
 
 
 </body>

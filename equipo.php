@@ -21,13 +21,13 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilo-fondo.css">
-    
+
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
 <?php require_once "header.php";
 ?>
 
@@ -40,8 +40,9 @@ require_once "navbar.php";
 <div class="container">
 <h1 class="titulo-jugador">Plantel Masculino- <strong>PRIMERA DIVISIÓN</strong></h1>
 
-<img class="mx-auto d-block" src="img/av3.jpeg" alt="">
-
+<div class="container">
+  <img style="width: 100%"src="img/av3.jpeg" alt="">
+</div>
 
 </div>
 <section class="text-center">
@@ -52,7 +53,7 @@ require_once "navbar.php";
 <div class="row">
 <?php
         $miconexion= mysqli_connect("localhost", "root", "", "avellaneda");
-        
+
         //Compruebo conexion
         if(!$miconexion){
             echo "La conexion ha fallado: ";
@@ -66,7 +67,7 @@ require_once "navbar.php";
                 if($foto_cara==null){
                     $foto_cara="person.png";
                 }
-       
+
         ?>
     <div class="col-lg-3">
 
@@ -75,13 +76,13 @@ require_once "navbar.php";
                             <a href="jugador.php?id=<?php echo "$id_jugador" ?>" style="text-decoration:none; color:black" title="Información acerca del jugador">
                             <img src="img/<?php echo "$foto_cara"; ?>" class="img-fluid rounded-circle" style="width: 50%;display:block;margin:auto;" alt="person">
                             <hr>
-                            
+
                             <?php if($registro['codPosi']==1){echo "<p>Arquero</p>";}elseif($registro['codPosi']==2){echo "<p>Defensor</p>";}elseif($registro['codPosi']==3){echo "<p>Mediocampista</p>";}elseif($registro['codPosi']==4){echo "<p>Delantero</p>";} ?>
                             <?php echo "<h3>" . $registro['nombre'] . "<br>" .  $registro['apellido'] ."</h3>"; ?>
                             <?php echo "<h2 class='numeros display-4'>" . $registro['dorsal'] . "</h2>"; ?>
                             </div>
-                            
-                            
+
+
                             <div id="fondo-icono" class="d-flex flex-row justify-content-center">
                             <?php if($registro['facebook']!= null){
                                 $facebook=$registro['facebook'];
@@ -114,31 +115,31 @@ require_once "navbar.php";
                                             <i id="icono" class="fab fa-instagram"></i>
                                         </a>
                                     </div>
-                                
-                                
-                            
+
+
+
                             </div>
                             <?php }else{} ?>
                         </div>
                     </div>
                     </a>
                 </div>
-                <?php 
+                <?php
             }
         }
         ?>
                 </form>
 
                 </section>
-   
-           
-               
-                
+
+
+
+
             </section>
     <!--FOOTER-->
     <?php require_once "footer.php" ?>
 
-  
+
     <!--SCRIPT NAVBAR-->
     <script>
       window.onscroll = function () { myFunction() };
