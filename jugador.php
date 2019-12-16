@@ -88,6 +88,8 @@ $miconexion= mysqli_connect("localhost", "root", "", "avellaneda");
                         <dd><?php echo $registro['altura'] . "cm" ?></dd>
                         <dt>Peso: </dt>
                         <dd><?php echo $registro['peso'] . "kg" ?></dd>
+                        <dt>Pierna hábil: </dt>
+                        <dd><?php if($registro['codPierna']==1){echo "Derecha" ;}elseif($registro['codPierna']==2){echo "Izquierda";}elseif($registro['codPierna']==5){echo "Ambas";} ?></dd>
                         <dt>Procedencia: </dt>
                         <dd><?php echo $registro['procedencia']; ?></dd>
                     </dl>

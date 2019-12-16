@@ -38,7 +38,7 @@ require_once "navbar.php";
 
 
 <div class="container">
-<h1 class="titulo-jugador">Plantel Masculino- <strong>PRIMERA DIVISIÓN</strong></h1>
+<h1 class="titulo-jugador">Plantel Masculino- <strong>RESERVA</strong></h1>
 
 <div class="container">
   <img style="width: 100%"src="img/av3.jpeg" alt="">
@@ -59,10 +59,10 @@ require_once "navbar.php";
             echo "La conexion ha fallado: ";
             exit();
         }
-        $miconsulta="SELECT * FROM plantel";
+        $miconsulta="SELECT * FROM plantel where reserva= '1'";
         if($resultado= mysqli_query($miconexion, $miconsulta)){
             while ($registro= mysqli_fetch_assoc($resultado)){
-                $id_jugador=$registro['codJug'];
+                
                 $foto_cara=$registro['fotoCara'];
                 if($foto_cara==null){
                     $foto_cara="person.png";
@@ -73,61 +73,31 @@ require_once "navbar.php";
 
       <div class="card" style="margin-top: 2%;">
                         <div class="card-body jugador">
-                            <a href="jugador.php?id=<?php echo "$id_jugador" ?>" style="text-decoration:none; color:black" title="Información acerca del jugador">
-                            <img src="img/<?php echo "$foto_cara"; ?>" class="img-fluid rounded-circle" style="width: 50%;display:block;margin:auto;" alt="person">
-                            <hr>
-
-                            <?php if($registro['codPosi']==1){echo "<p>Arquero</p>";}elseif($registro['codPosi']==2){echo "<p>Defensor</p>";}elseif($registro['codPosi']==3){echo "<p>Mediocampista</p>";}elseif($registro['codPosi']==4){echo "<p>Delantero</p>";} ?>
+                        <?php if($registro['codPosi']==1){echo "<p>Arquero</p>";}elseif($registro['codPosi']==2){echo "<p>Defensor</p>";}elseif($registro['codPosi']==3){echo "<p>Mediocampista</p>";}elseif($registro['codPosi']==4){echo "<p>Delantero</p>";} ?>
                             <?php echo "<h3>" . $registro['nombre'] . "<br>" .  $registro['apellido'] ."</h3>"; ?>
                             <?php echo "<h2 class='numeros display-4'>" . $registro['dorsal'] . "</h2>"; ?>
+                            <hr>
+                            <p>Altura: <strong><?php echo $registro['altura']; ?></strong></p>
+                            <p>Peso: <strong><?php echo $registro['peso']; ?></strong></p>
+                            <p>Pierna hábil: <strong><?php if($registro['codPierna']==1){echo "Derecha";}elseif($registro['codPierna']==2){echo "Izquierda";}elseif($registro['codPierna']==5){echo "Ambas";} ?></strong></p>
+                            
                             </div>
 
-
-                            <div id="fondo-icono" class="d-flex flex-row justify-content-center">
-                            <?php if($registro['facebook']!= null){
-                                $facebook=$registro['facebook'];
-                            ?>
-                                <div class="red p-4">
-                                <a href="<?php echo "$facebook"; ?>" target="blank">
-                                        <i id="icono" class="fab fa-facebook-square"></i>
-                                    </a>
-                                </div>
-                            <?php }else{}
-                            if($registro['twitter']!=null){
-
-                            $twitter=$registro['twitter'];
-                            ?>
-                                <div class="d-flex flex-row justify-content-center">
-                                    <div class="p-4">
-                                        <a href="<?php echo "$twitter"; ?>" target="blank">
-                                            <i id="icono" class="fab fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            <?php }else{}
-
-                            if($registro['instagram']!=null){
-                                $instagram=$registro['instagram'];
-                            ?>
-                                <div class="d-flex flex-row justify-content-center">
-                                    <div class="p-4">
-                                        <a href="<?php echo "$instagram";?>" target="blank">
-                                            <i id="icono" class="fab fa-instagram"></i>
-                                        </a>
-                                    </div>
+           
+                            
 
 
 
                             </div>
-                            <?php }else{} ?>
-                        </div>
+                           
+                        
                     </div>
-                    </a>
-                </div>
-                <?php
+                    <?php
             }
         }
-        ?>
+            ?>
+                </div>
+</div>
                 </form>
 
                 </section>
