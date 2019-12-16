@@ -1,80 +1,109 @@
-
-.row__inner {
-  transition: 450ms -webkit-transform;
-  transition: 450ms transform;
-  transition: 450ms transform, 450ms -webkit-transform;
-  font-size: 0;
-  white-space: nowrap;
-  margin: 70.3125px 0;
-  padding-bottom: 5px;
-}
-.tile {
-  position: relative;
-  display: inline-block;
-  width: 550px;
-  height: 250.625px;
-  margin-right: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: 450ms all;
-  -webkit-transform-origin: center left;
-  transform-origin: center left;
-}
-.tile__img {
-  width: 550px;
-  height: 250.625px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.tile__details {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  font-size: 10px;
-  opacity: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
-  transition: 450ms opacity;
-}
-.tile__details:after,
-.tile__details:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: #000;
-}
-.tile__details:after {
-  margin-top: -25px;
-  margin-left: -25px;
-  width: 50px;
-  height: 50px;
-  border: 3px solid #ecf0f1;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 100%;
-  background: rgba(0,0,0,0.5);
-  z-index: 1;
-}
-.tile__title {
-  position: absolute;
-  bottom: 0;
+.carousel {
   padding: 10px;
+  -webkit-perspective: 5500px;
+          perspective: 5500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.row__inner:hover {
-  -webkit-transform: translate3d(-62.5px, 0, 0);
-  transform: translate3d(-62.5px, 0, 0);
+.carousel > * {
+  flex: 0 0 auto;
 }
-.row__inner:hover .tile {
-  opacity: 0.3;
+.carousel figure {
+  margin: 0;
+  width: 40%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: -webkit-transform 0.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
 }
-.row__inner:hover .tile:hover {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+.carousel figure img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0px;
+}
+.carousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.carousel nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+/* Next & previous buttons
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 5px;
+  margin-top: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+	margin-left: -1300px;
+}
+
+/* On hover, add a black background color with a little bit see-through
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+*/
+
+.button {
+  border-radius: 4px;
+  background-color: #000008;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
   opacity: 1;
-}
-.tile:hover ~ .tile {
-  -webkit-transform: translate3d(276px, 0, 0);
-  transform: translate3d(276px, 0, 0);
+  right: 0;
 }
