@@ -72,7 +72,7 @@ require_once "navbar.php";
     <div class="col-lg-3 col-6 col-sm-6 col-md-6">
 
       <div class="card" style="margin-top: 2%;">
-                        <div class="card-body jugador">
+                        <div class="card-body">
                         <?php if($registro['codPosi']==1){echo "<p>Arquero</p>";}elseif($registro['codPosi']==2){echo "<p>Defensor</p>";}elseif($registro['codPosi']==3){echo "<p>Mediocampista</p>";}elseif($registro['codPosi']==4){echo "<p>Delantero</p>";} ?>
                             <?php echo "<h3>" . $registro['nombre'] . "<br>" .  $registro['apellido'] ."</h3>"; ?>
                             <?php echo "<h2 class='numeros display-4'>" . $registro['dorsal'] . "</h2>"; ?>

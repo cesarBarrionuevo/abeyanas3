@@ -59,7 +59,7 @@ require_once "navbar.php";
             echo "La conexion ha fallado: ";
             exit();
         }
-        $miconsulta="SELECT * FROM plantel";
+        $miconsulta="SELECT * FROM plantel where reserva = '0'";
         if($resultado= mysqli_query($miconexion, $miconsulta)){
             while ($registro= mysqli_fetch_assoc($resultado)){
                 $id_jugador=$registro['codJug'];
