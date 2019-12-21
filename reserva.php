@@ -20,6 +20,7 @@
         crossorigin="anonymous"></script>
     <!--CSS-->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilo_jugador.css">
     <link rel="stylesheet" href="css/estilo-fondo.css">
 
     <!--FONTS-->
@@ -50,7 +51,7 @@ require_once "navbar.php";
 
 <div class="container m-auto">
 
-<div class="row">
+<div class="row no-gutters" style="margin-right: 0; margin-left:0;">
 <?php
         $miconexion= mysqli_connect("localhost", "root", "", "avellaneda");
 
@@ -69,14 +70,20 @@ require_once "navbar.php";
                 }
 
         ?>
-    <div class="col-lg-3 col-6 col-sm-6 col-md-6">
+    <div class="col-lg-3 col-6 col-sm-6 col-md-6" style="padding-right: 0; padding-left:0">
 
       <div class="card" style="margin-top: 2%;">
                         <div class="card-body">
-                        <?php if($registro['codPosi']==1){echo "<p>Arquero</p>";}elseif($registro['codPosi']==2){echo "<p>Defensor</p>";}elseif($registro['codPosi']==3){echo "<p>Mediocampista</p>";}elseif($registro['codPosi']==4){echo "<p>Delantero</p>";} ?>
-                            <?php echo "<h3>" . $registro['nombre'] . "<br>" .  $registro['apellido'] ."</h3>"; ?>
-                            <?php echo "<h2 class='numeros display-4'>" . $registro['dorsal'] . "</h2>"; ?>
-                            <hr>
+                            <span class="posicion-reserva">
+                        <?php if($registro['codPosi']==1){echo "Arquero";}elseif($registro['codPosi']==2){echo "Defensor";}elseif($registro['codPosi']==3){echo "Mediocampista";}elseif($registro['codPosi']==4){echo "Delantero";} ?>
+                        </span>
+                        <h3 class="nombre-reserva">    
+                        <?php echo $registro['nombre'] . "<br>" .  $registro['apellido']; ?>
+                        </h3>
+                        <h2 class="numeros-reserva display-4"> 
+                        <?php echo   $registro['dorsal'] ; ?>
+                        </h2>
+                        <hr>
                             <p>Altura: <strong><?php echo $registro['altura']; ?></strong></p>
                             <p>Peso: <strong><?php echo $registro['peso']; ?></strong></p>
                             <p>Pierna hábil: <strong><?php if($registro['codPierna']==1){echo "Derecha";}elseif($registro['codPierna']==2){echo "Izquierda";}elseif($registro['codPierna']==5){echo "Ambas";} ?></strong></p>
