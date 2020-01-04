@@ -3,7 +3,7 @@
 <section class="section">
   <!-- Card -->
   <div class="container pb-4">
-    <h4 class="roboto text-center pt-4 pb-2 leyenda3" style="color: white">ÚLTIMOS RESULTADOS:</h4>
+    <h4 class="roboto text-center pt-4 pb-2 leyenda3" style="color: white">ÚLTIMOS RESULTADOS</h4>
     <hr>
     <div class="row text-center"><!-- fila-Principal-->
       <div class="col-md-4 col-12 col-sm-12 col-lg-4 text-center"><!-- primer-columna-->
@@ -21,7 +21,7 @@
               </div>
               <!--fin segColAnidada-->
               <div class="col-4 text-left"><!--terColAnidada -->
-                <img src="img/IMG_EscuEquipos/talleres" style="width:60%;">
+                <img src="img/IMG_EscuEquipos/talleres.png" style="width:60%;">
               </div>
               <!--fin terColAnidada-->
             </div>
@@ -47,7 +47,7 @@
               </div>
               <!--fin segColAnidada-->
               <div class="col-4 text-left"><!--terColAnidada -->
-                <img src="img/IMG_EscuEquipos/talleres" style="width:60%;">
+                <img src="img/IMG_EscuEquipos/Sacachispa.png" style="width:60%;">
               </div>
               <!--fin terColAnidada-->
             </div>
@@ -74,7 +74,7 @@
               </div>
               <!--fin segColAnidada-->
               <div class="col-4 text-left"><!--terColAnidada -->
-                <img src="img/IMG_EscuEquipos/talleres" style="width:60%;">
+                <img src="img/IMG_EscuEquipos/CentralArgentino.png" style="width:60%;">
               </div>
               <!--fin terColAnidada-->
             </div>
@@ -175,7 +175,7 @@
             </div>
           </div>
         </div>
-        
+
       </div>
       <!--fila segCol-->
     </div>
@@ -231,8 +231,7 @@
       <div class="text-white text-center bg-primary d-inline-block">
         <div class="card-header bg-dark">Sin definir</div>
       </div>
-        
+
 </div><!-- fin fila-->
 </div>
 <!--fin Containner-->
-

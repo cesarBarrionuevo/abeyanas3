@@ -24,14 +24,14 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilo_jugador.css">
     <link rel="stylesheet" href="css/estilo-fondo.css">
-    
+
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
 
 
     <!--HEADER-->
@@ -44,8 +44,8 @@
 <section class="imagen-de-fondo">
    <?php
 $id=$_GET['id'];
-$miconexion= mysqli_connect("localhost", "root", "", "avellaneda");
-        
+$miconexion= mysqli_connect("localhost", "root", "cabs", "avellaneda");
+
         //Compruebo conexion
         if(!$miconexion){
             echo "La conexion ha fallado: ";
@@ -54,7 +54,7 @@ $miconexion= mysqli_connect("localhost", "root", "", "avellaneda");
         $miconsulta="SELECT * FROM plantel where codJug='". $id . "'";
         if($resultado= mysqli_query($miconexion, $miconsulta)){
             while ($registro= mysqli_fetch_assoc($resultado)){
-                
+
                 $foto_torso=$registro['fotoDorso'];
                 if($foto_torso==null){
                     $foto_torso="jugador-none.png";
@@ -91,17 +91,17 @@ $miconexion= mysqli_connect("localhost", "root", "", "avellaneda");
                         <dt>Procedencia: </dt>
                         <dd><?php echo $registro['procedencia']; ?></dd>
                     </dl>
-                    
+
                     <a class="btn btn-outline-danger btn-lg btn-block" href="equipo.php" title="Volver al plantel">VOLVER A EL PLANTEL</a>
-                    
+
                 </div>
             </div>
 
 </div>
 
 </div>
-            <?php 
-            } 
+            <?php
+            }
             }
             ?>
 
