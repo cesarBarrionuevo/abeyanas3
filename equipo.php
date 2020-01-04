@@ -40,25 +40,31 @@ require_once "navbar.php";
 <div class="container">
 <h2 class="titulo-jugador">Plantel Masculino- <strong>PRIMERA DIVISIÓN</strong></h2>
 
-<img class="mx-auto d-block" src="img/av3.jpeg" alt="">
 
-
+<div class="container">
+  <img style="width: 100%"src="img/av3.jpeg" alt="">
 </div>
+
+
 <section class="text-center">
-<form action="" method="get">
 
-<div class="container m-auto">
 
-<div class="row">
+
+
+<div class="row no-gutters" style="margin-right: 0; margin-left:0;">
 <?php
+<<<<<<< HEAD
         $miconexion= mysqli_connect("localhost", "root", "cabs", "avellaneda");
+=======
+        $miconexion= mysqli_connect("localhost", "root", "", "avellaneda");
+>>>>>>> 7fc2a651a89d3f91edf8e704cb9178f88f94d650
 
         //Compruebo conexion
         if(!$miconexion){
             echo "La conexion ha fallado: ";
             exit();
         }
-        $miconsulta="SELECT * FROM plantel";
+        $miconsulta="SELECT * FROM plantel where reserva = '0'";
         if($resultado= mysqli_query($miconexion, $miconsulta)){
             while ($registro= mysqli_fetch_assoc($resultado)){
                 $id_jugador=$registro['codJug'];
@@ -68,6 +74,7 @@ require_once "navbar.php";
                 }
 
         ?>
+<<<<<<< HEAD
     <div class="col-lg-4">
 
       <div class="card" style="margin-top: 2%;">
@@ -83,10 +90,32 @@ require_once "navbar.php";
 
 
                             <div id="fondo-icono" class="d-flex flex-row justify-content-center">
+=======
+    <div class="col-lg-3 col-6 col-sm-6 col-md-6" style="padding-right: 0; padding-left:0;">
+
+      <div class="card" style="margin-top: 2%;">
+                        <div class="card-body jugador">
+                            <a class="carta-jugador" href="jugador.php?id=<?php echo "$id_jugador" ?>" style="text-decoration:none; color:black" title="Información acerca del jugador">
+                            <img src="img/<?php echo "$foto_cara"; ?>" class="img-fluid rounded-circle" style="width: 50%;display:block;margin:auto;" alt="person">
+                            <hr>
+                            <span class="posicion-carta">
+                            <?php if($registro['codPosi']==1){echo "Arquero";}elseif($registro['codPosi']==2){echo "Defensor";}elseif($registro['codPosi']==3){echo "Mediocampista";}elseif($registro['codPosi']==4){echo "Delantero";} ?>
+                            </span>
+                            <h3 class="nombre">
+                            <?php echo  $registro['nombre'] . "<br>" .  $registro['apellido'] ; ?>
+                            </h3>
+                            <h2 class="numeros display-4">
+                            <?php echo  $registro['dorsal']; ?>
+                            </h2>    
+                        </div>
+
+
+                            <div id="fondo-icono" class="d-flex flex-row justify-content-center align-middle">
+>>>>>>> 7fc2a651a89d3f91edf8e704cb9178f88f94d650
                             <?php if($registro['facebook']!= null){
                                 $facebook=$registro['facebook'];
                             ?>
-                                <div class="red p-4">
+                                <div class="red p-2">
                                 <a href="<?php echo "$facebook"; ?>" target="blank">
                                         <i id="icono" class="fab fa-facebook-square"></i>
                                     </a>
@@ -96,8 +125,8 @@ require_once "navbar.php";
 
                             $twitter=$registro['twitter'];
                             ?>
-                                <div class="d-flex flex-row justify-content-center">
-                                    <div class="p-4">
+                                <div class="d-flex flex-row justify-content-center align-middle">
+                                    <div class="p-2">
                                         <a href="<?php echo "$twitter"; ?>" target="blank">
                                             <i id="icono" class="fab fa-twitter"></i>
                                         </a>
@@ -108,8 +137,8 @@ require_once "navbar.php";
                             if($registro['instagram']!=null){
                                 $instagram=$registro['instagram'];
                             ?>
-                                <div class="d-flex flex-row justify-content-center">
-                                    <div class="p-4">
+                                <div class="d-flex flex-row justify-content-center align-middle">
+                                    <div class="p-2">
                                         <a href="<?php echo "$instagram";?>" target="blank">
                                             <i id="icono" class="fab fa-instagram"></i>
                                         </a>
@@ -127,8 +156,13 @@ require_once "navbar.php";
             }
         }
         ?>
+<<<<<<< HEAD
                 </form>
 
+=======
+                
+                </div>
+>>>>>>> 7fc2a651a89d3f91edf8e704cb9178f88f94d650
                 </section>
 
 

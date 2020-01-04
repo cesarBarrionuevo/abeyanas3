@@ -302,11 +302,17 @@ html{ scroll-behavior: smooth}
      text-align: center;
      padding-bottom: 30px;
    }
-   footer .redes span{
+  #seguinos{
      color: #8b8b8c;
      font: italic 14px/14px 'Roboto',Helvetica,sans-serif;
-     margin-top: 21px;
-     float: center;
+ float: left;
+ margin-top: 18px;
+     
+   }
+   #redes-f{
+        float: right;
+        margin-top: 20px;
+      margin-right: 55px;
    }
 
    footer .redes{
@@ -411,6 +417,18 @@ html{ scroll-behavior: smooth}
      
 
 }
+.posicion-carta{
+     line-height: 15px;
+          font-size: 14px;
+          color: grey;
+          margin-top: 0;
+          
+          
+}
+h3.nombre{
+     padding-top: 6px;
+     font-weight: bold;
+}
 @media (max-width: 767px){
      .tFijo{
           padding-bottom: 20px;
@@ -421,10 +439,110 @@ html{ scroll-behavior: smooth}
 
 .colorR {
      background-color: #c10f21!important;
+ }.card{
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+   
+
+}
+
+ @media (max-width: 767px){
+     .card{
+          height: 332px;
+          margin-left: 0.5px;
+    margin-right: 0.5px;
+
+     }
+     #fondo-icono{
+          background-color:lightskyblue;
+     }
+
+     .numeros{
+          color: gray;
+          font-weight: bold;
+          text-align: right;
+          font-size: 50px;
+         
+     
+     }
+     .posicion-carta{
+          margin-top: 0;
+          line-height: 15px;
+          font-size: 12px;
+     }
+}
+ @media (max-width: 767px){
+     h3.nombre{
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 17px;
+          padding-top: 3px;
+     }
  }
 
 
 
+ /*Footer responsivo */
+ @media (max-width: 767px){
+      #imagen-footer{
+           display: inline-block;
+           width: 100%;
+      }
+#escudo-footer{
+     position: relative;
+     margin-top: 10px;
+     float: left;
+     margin-left: 0;
+     width: auto;
+     height: auto;
+}
+#nombre-club-footer{
+    font-size:5.1vw;
+    margin-top: 6vh;
+   margin-left: 0;
+    float:none;
+    
+}
+
+
+#elementos{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#redes-f{
+     display: block;
+    margin-left: auto;
+margin-right: auto;
+
+}
+
+
+
+#seguinos{
+     text-align: center;
+     margin-top: 4px;
+     float: none;
+     display: block;
+}
+#redes-footer{
+    
+     margin-top: 1vh;
+     font-size: 270%;
+     margin-right: 6px;
+     
+}
+#copyright{
+     color: #8b8b8c;
+     font: 'Roboto',Helvetica,sans-serif;
+     font-size: 2.8vw;
+     text-align: center;
+     margin-top: 5vh;
+}
+
+}
+/* Fin footer responsivo */
 
 
 

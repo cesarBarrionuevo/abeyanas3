@@ -65,7 +65,7 @@ $miconexion= mysqli_connect("localhost", "root", "cabs", "avellaneda");
 
 <div class="ficha container">
 <h2 class="titulo-jugador" style="text-align: left;">Ficha del Jugador</h2>
-<div class="row">
+<div class="row no-gutters">
         <div class="foto-jugador col-12 col-sm-12 col-lg-6">
             <div class="imagen-jugador py-1">
                 <span class="contiene-imagen">
@@ -73,7 +73,7 @@ $miconexion= mysqli_connect("localhost", "root", "cabs", "avellaneda");
                 </span>
             </div>
         </div>
-        <div class="col-12 col-sm-12 col-lg-6">
+        <div class="info-jugador col-12 col-sm-12 col-lg-6">
             <div class="ficha-jugador">
                     <h2 class="titulo-jugador"><?php echo $registro['nombre'] . " " . $registro['apellido']; ?></h2>
                     <h3 class="posicion-jugador"><?php if($registro['codPosi']==1){echo "<p>Arquero</p>";}elseif($registro['codPosi']==2){echo "<p>Defensor</p>";}elseif($registro['codPosi']==3){echo "<p>Mediocampista</p>";}elseif($registro['codPosi']==4){echo "<p>Delantero</p>";} ?></h3>
@@ -88,6 +88,8 @@ $miconexion= mysqli_connect("localhost", "root", "cabs", "avellaneda");
                         <dd><?php echo $registro['altura'] . "cm" ?></dd>
                         <dt>Peso: </dt>
                         <dd><?php echo $registro['peso'] . "kg" ?></dd>
+                        <dt>Pierna hábil: </dt>
+                        <dd><?php if($registro['codPierna']==1){echo "Derecha" ;}elseif($registro['codPierna']==2){echo "Izquierda";}elseif($registro['codPierna']==5){echo "Ambas";} ?></dd>
                         <dt>Procedencia: </dt>
                         <dd><?php echo $registro['procedencia']; ?></dd>
                     </dl>

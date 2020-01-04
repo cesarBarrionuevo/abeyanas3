@@ -31,6 +31,7 @@
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="js/carousel.js"></script>
 </head>
 
 <body>
@@ -43,7 +44,8 @@
     <!--NAVEGACIÓN-->
 
    <?php require_once "navbar.php" ?>
-   <?php require_once "carousel.php" ?>
+   <?php require_once "carousel2.php" ?>
+   
 
     <!-- section -->
     <div>
