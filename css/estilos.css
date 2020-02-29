@@ -1,3 +1,627 @@
+<<<<<<< HEAD
+*{   
+     margin: 0px;
+     padding: 0px;
+}
+
+
+.navbar{
+     background: rgb(219, 219, 219);
+     height: 50px;
+     margin-bottom: 0px;
+
+
+}
+
+.fondoMenu{
+     background: #CC1E0E;
+}
+.partidos{
+     width: 100%;
+     height: 35px;
+     color: white;
+     background: rgb(8, 7, 7);
+
+}
+.leyenda1{
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 11px;
+     padding-left: 100px;
+     padding-right: 12px;
+     padding-top: 10px;
+     text-transform: uppercase;
+}
+.leyenda2{
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 11px;
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-top: 10px;
+     text-transform: uppercase;
+}
+
+@media (max-width: 767px){
+     .vertical-line{
+          display: none;
+     }
+     .partidos{
+          width: 100%;
+          height: 3.2rem;
+     }
+     .mobile-nav{
+          width: 100%;
+          padding-top: 1vh;
+     }
+
+.mobile-nav p{
+     
+     display: inline;
+}
+.leyenda1{
+     
+     font-size: 3vmin;
+     margin-left: 0;
+     padding-left: .5rem;
+     
+     padding-right: 0;
+}
+.leyenda2{
+     
+     
+     font-size: .55rem;
+     padding-left: .5rem;
+     padding-top: 0;
+}
+.mobile-nav p img{
+  display: none;
+}
+
+}
+
+
+#nombre-club-footer{
+     font-family: 'Roboto Condensed' ;
+     font-size: 34px;
+     -webkit-text-stroke: 1px red;
+     color: transparent;
+}
+
+div.vertical-line{
+      width: 1px;
+      background-color: hsl(120, 0%, 50%); /* Color de linea */
+      height: 100%;
+      float: left;
+}
+.img-header1{
+      width: 16%;
+      margin-left: 15px;
+      margin-top: 2px;
+      margin-right: -170px;
+}
+.img-sponsor-header{
+      margin-right: -150px;
+      margin-left: 60vh;
+      margin-bottom: 15px;;
+}
+/*Tamaño segundo header*/
+.headerimg{
+      max-height: 135px;
+}
+
+/*Animacion linea debajo de cada elemento de la navbar */
+.nav-item{
+     font-family: 'Raleway', sans-serif;
+     font-size: 14px;
+     font-weight: bold;
+
+}
+.nav-link{
+     padding: 0 2em;
+     margin: 0.3em;
+     transition: all .4s;
+
+
+}
+@media (min-width: 767px){
+.nav-link-hover:hover{
+     border-bottom: 3px solid red;
+
+}
+}
+.navbar-nav .nav-item .nav-link{
+     color: black;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 20px;
+}
+
+
+
+
+/*Submenu Desplegable */
+@media (min-width: 767px){
+.submenu{
+
+     list-style: none;
+     position: absolute;
+     visibility: hidden;
+     margin-bottom: 0;
+     opacity: 0;
+     transition:all .3s;
+
+}
+.submenu li a{
+     display: block;
+     padding: 10px;
+     color:   rgb(143, 143, 143);
+     text-decoration: none;
+     font-family: 'Montserrat', sans-serif;
+     background: white;
+
+     transition: .4s;
+     width: 200px;
+}
+#navbarNav li:hover .submenu{
+     visibility: visible;
+     opacity: 1;
+     background: whitesmoke;
+}
+nav ul {
+     margin-top: 0px;
+     margin-bottom: 0;
+    }
+.submenu li a:hover{
+     background:rgba(206, 214, 224,.5);
+     color: red;
+}
+
+.sub-submenu{
+     list-style: none;
+     position: absolute;
+     visibility: hidden;
+     margin-bottom: 0;
+     opacity: 0;
+     left: 100%;
+     top: 0;
+     transition: opacity 1s;
+     width: 200px;
+}
+.sub-submenu li a{
+     display: block;
+     padding: 10px;
+     color: rgb(143, 143, 143);
+     text-decoration: none;
+     font-family: 'Montserrat', sans-serif;
+     background: white;
+     width: 100%;
+
+
+}
+
+#navbarNav .submenu li:hover > .sub-submenu{
+     visibility: visible;
+     opacity: 1;
+     background: whitesmoke;
+}
+}
+
+
+
+
+
+
+/* Animación para la navbar cuando se junta con el escudo */
+@media (min-width: 767px){
+.animacion{
+
+     position: relative;
+     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+     animation: mymove 5s infinite;
+}
+@-webkit-keyframes mymove {
+     from {left: 0px;}
+     to {left: 200px;}
+   }
+
+   @keyframes mymove {
+     from {left: 0px;}
+     to {left: 200px;}
+   }
+   .animacion {
+     left: -28px;
+     -webkit-animation: slide 0.3s forwards;
+     -webkit-animation-delay: .3s;
+     animation: slide .3s forwards;
+     animation-delay: .05s;
+ }
+
+ @-webkit-keyframes slide {
+     100% { left: 0; }
+ }
+
+ @keyframes slide {
+     100% { left: 0; }
+ }
+}
+
+/* Animación navbar */
+html{ scroll-behavior: smooth}
+
+/*Inicio carousel index*/
+
+.carousel-inner img {
+    width: 100%;
+  }
+  /* Lo comento para que el carousel quede pegado a la navbar
+  .carousel{
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+  */
+  .carousel-item{
+      text-align: center;
+      max-height: 500px;
+      width: 100%;
+  }
+  .micarousel{
+       margin: 0px;
+       margin-bottom: 0px;
+  }
+
+  /*Fin carousel index*/
+
+  .container-noticias{
+
+    background-color: rgb(196, 195, 195);
+  }
+.numeros{
+     color: gray;
+     font-weight: bold;
+     text-align: right;
+
+}
+
+#fondo-icono{
+     text-align: center;
+}
+
+#icono{
+     color: rgb(52, 52, 151);
+}
+
+#icono:hover{
+     color:white;
+}
+#fondo-icono:hover{
+     background-color:lightskyblue;
+}
+/* Animación jugadores del plantel */
+.jugador:hover{
+
+	-webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+             animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+@-webkit-keyframes scale-down-center {
+     0% {
+       -webkit-transform: scale(1);
+               transform: scale(1);
+     }
+     100% {
+       -webkit-transform: scale(0.9);
+               transform: scale(0.9);
+     }
+   }
+   @keyframes scale-down-center {
+     0% {
+       -webkit-transform: scale(1);
+               transform: scale(1);
+     }
+     100% {
+       -webkit-transform: scale(0.9);
+               transform: scale(0.9);
+     }
+   }
+
+   /*Footer */
+   footer{
+     background: url(../img/fondo-footer.jpg) no-repeat center top;
+
+
+    border-top: 1.5px solid red;
+
+   }
+
+
+  footer .imagen-footer{
+     padding-top: 20px;
+   }
+
+  footer .imagen-footer a{
+     float: left;
+     margin-left: 5%;
+   }
+
+   .imagen-footer h3{
+     float: left;
+     margin-top: 30px;
+     margin-left: 20px;
+   }
+
+   footer .copyright{
+     color: #8b8b8c;
+     font: 500 12px/14px 'Roboto',Helvetica,sans-serif;
+     text-align: center;
+     padding-bottom: 30px;
+   }
+  #seguinos{
+     color: #8b8b8c;
+     font: italic 14px/14px 'Roboto',Helvetica,sans-serif;
+ float: left;
+ margin-top: 18px;
+     
+   }
+   #redes-f{
+        float: right;
+        margin-top: 20px;
+      margin-right: 55px;
+   }
+
+   footer .redes{
+     float: right;
+     padding-right: 30px;
+     padding-top: 10px;
+     /*margin-top: 2px;
+     margin-right: 7%;*/
+   }
+   footer .redes-ul{
+        float: right;
+        padding-right: 30px;
+        padding-top: 20px;
+   }
+   .redes-ul{
+        top: 5px;
+        position: relative;
+   }
+   footer .redes-ul li{
+     float: right;
+     margin-left: 12px;
+   }
+
+   #redes-footer{
+        color: red;
+   }
+   #redes-footer:hover{
+     color: white;
+   }
+   footer .desarrolladores{
+     color: #8b8b8c;
+     font: 500 12px/14px 'Roboto',Helvetica,sans-serif;
+     text-align: center;
+
+   }
+
+   /*
+   @media screen and (max-width:1200px) and (min-width:0px) {
+     .footer_ab {
+          background: red;
+          position: fixed;
+          bottom: 0;
+         left: 0;
+          width: 100%;
+
+          color: white;
+   }
+}
+*/
+
+/*Estilos section*/
+
+#secPartido{
+     width: 30%;
+    
+
+}
+
+.section{
+
+     background:-webkit-linear-gradient(bottom,rgb(88, 0, 0),red,rgb(126, 22, 22));
+     opacity: 0.9;
+   
+
+}
+.section2{
+     background:-webkit-linear-gradient(bottom,white,grey);
+     opacity: 0.9;
+}
+.hrRojo { margin-bottom: 0px;
+     margin-top: 0px;
+     border: 0; 
+     height: 3px; 
+     text-align: center;
+     background-image: -webkit-linear-gradient(left,white,red,white);
+     position: fixed;
+}
+
+.div{
+     background: rgb(143, 143, 143);
+
+}
+
+ 
+
+ .hr {margin-top: 5px;
+      border: 1px; 
+     border-top: 3px solid #999; 
+     border-bottom: 1px solid #333; 
+     height:0;}
+
+.tFijo{/*tamaño fijo imagen(resultado partido)*/
+     width:100%; 
+     height:200px;
+
+
+}
+.tFijoC{/*tamaño fijo de la carta(resultado partido)*/
+     width:100%; 
+     height: 420px;
+   max-height:420px;
+     
+
+}
+.posicion-carta{
+     line-height: 15px;
+          font-size: 14px;
+          color: grey;
+          margin-top: 0;
+          
+          
+}
+h3.nombre{
+     padding-top: 6px;
+     font-weight: bold;
+}
+@media (max-width: 767px){
+     .tFijo{
+          padding-bottom: 20px;
+     }
+}
+
+
+
+.colorR {
+     background-color: #c10f21!important;
+ }.card{
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+   
+
+}
+
+
+
+
+
+ @media (max-width: 767px) and (orientation:portrait){
+     .card{
+          height: 332px;
+          margin-left: 0.5px;
+    margin-right: 0.5px;
+
+     }
+     #fondo-icono{
+         
+          background-color:lightskyblue;
+     }
+
+     .numeros{
+          color: gray;
+          font-weight: bold;
+          text-align: right;
+          font-size: 50px;
+         
+     
+     }
+     .posicion-carta{
+          margin-top: 0;
+          line-height: 15px;
+          font-size: 12px;
+     }
+}
+ @media (max-width: 767px){
+     h3.nombre{
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 17px;
+          padding-top: 3px;
+     }
+ }
+
+
+
+ /*Footer responsivo */
+ @media (max-width: 767px){
+   
+      #imagen-footer{
+           display: inline-block;
+           width: 100%;
+      }
+#escudo-footer{
+     position: relative;
+     margin-top: 10px;
+     float: left;
+     margin-left: 0;
+     width: auto;
+     height: auto;
+}
+#nombre-club-footer{
+    font-size:5.1vw;
+    margin-top: 6vh;
+   margin-left: 0;
+    float:none;
+    
+}
+
+
+#elementos{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#redes-f{
+     display: block;
+    margin-left: auto;
+margin-right: auto;
+
+}
+
+
+
+#seguinos{
+     text-align: center;
+     margin-top: 4px;
+     float: none;
+     display: block;
+}
+#redes-footer{
+    
+     margin-top: 1vh;
+     font-size: 270%;
+     margin-right: 6px;
+     
+}
+#copyright{
+     color: #8b8b8c;
+     font: 'Roboto',Helvetica,sans-serif;
+     font-size: 2.8vw;
+     text-align: center;
+     margin-top: 5vh;
+     
+}
+
+}
+/* Fin footer responsivo */
+
+
+/* boton volver a el plantel*/
+@media (max-width: 767px){
+.boton-volver:before {
+    
+     content: attr(data-pant-chica);
+ }
+ .boton-volver{
+      margin-bottom: 20px;
+ }
+}
+@media (min-width: 768px){
+     .boton-volver:before{
+          
+          content: attr(data-pant-grande);
+     }
+     
+}
+=======
 *{   
      margin: 0px;
      padding: 0px;
@@ -547,3 +1171,4 @@ margin-right: auto;
 
 
 
+>>>>>>> 423f165feedb0cdce6dbc74278605eddac3a996d

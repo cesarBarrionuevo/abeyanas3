@@ -1,0 +1,319 @@
+.menu-lateral{
+   display: block;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    height: 50px;
+    width: 190px;
+    background: rgba(0, 0, 0, 0.705);
+    font-family:'Roboto',Helvetica,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    border-top-left-radius: 7px; 
+    border-top-right-radius: 7px;
+    
+}
+
+.separador{border: 1px solid red;  margin-bottom: 0; margin-top: 0; width: 188px;}
+
+.elementos{
+    background-color: rgb(216, 216, 216);
+    width: 190px;
+    text-align: center;
+}
+.elm{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-family:'Roboto',Helvetica,sans-serif;
+}
+.elm:hover{
+    text-decoration: none;
+    color: red;
+}
+
+
+#seccion-orig{
+
+    background-position: center center ;
+    background-image: url(../img/nuestros_origenes.jpg);
+    width: 120%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 2%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.nuestros-origenes a{
+    text-decoration: none;
+}
+#seccion-orig h4{
+padding-left: 2%;
+font-size: 1.5em;
+  font-weight: bold;
+   padding-bottom: 1.2%;
+    color:white;
+    position: relative;
+    
+}
+#seccion-orig p{
+    padding-left: 2%;
+    font-size: 16px;
+   padding-bottom: 1%;
+    color:rgb(0, 174, 255);
+    position: relative;
+    -webkit-text-stroke: .07px white;
+}
+#seccion-orig:before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius:0 0 4% 4%;
+    
+}
+
+#el-club{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+
+/*COMISION DIRECTIVA*/
+#comision-directiva{
+    margin-left: 6vw;
+    background-position: center center ;
+    background-image: url(../img/comision.jpg);
+    width: 120%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 2%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.comision-directiva a{
+    text-decoration: none;
+}
+#comision-directiva h4{
+    
+
+
+padding-left: 2%;
+  font-size: 1.5em;
+  font-weight: bold;
+   padding-bottom: 1.2%;
+    color:white;
+    position: relative;
+    
+}
+#comision-directiva p{
+    padding-left: 2%;
+    font-size: 16px;
+   padding-bottom: 1%;
+   color:rgb(0, 174, 255);
+    position: relative;
+    -webkit-text-stroke: .07px white;
+}
+#comision-directiva:before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius:0 0 4% 4%;
+    
+}
+
+/*PRIMEROS JUGADORES*/
+#primeros-jugadores{
+    margin-left: 25%;
+    
+    margin-top: 4vh;
+    background-position: center center ;
+    background-image: url(../img/primeros-jugadores.jpg);
+    width: 58%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 2%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.primeros-jugadores a{
+    text-decoration: none;
+}
+#primeros-jugadores h4{
+padding-left: 2%;
+font-size: 1.5em;
+  font-weight: bold;
+   padding-bottom: 1.2%;
+    color:white;
+    position: relative;
+    
+}
+#primeros-jugadores p{
+    padding-left: 2%;
+    font-size: 16px;
+   padding-bottom: 1%;
+   color:rgb(0, 174, 255);
+    position: relative;
+    -webkit-text-stroke: .07px white;
+    
+}
+#primeros-jugadores:before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius:0 0 4% 4%;
+    
+}
+   
+/* Responsivo */
+@media (max-width: 767px){
+#seccion-orig{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  
+    height: 42vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center center;
+}
+#seccion-orig h4{
+  
+   
+}
+#seccion-orig p{
+    padding-bottom: 20px;
+    position: bottom;
+}
+#seccion-orig:before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius:0 0 4% 4%;
+}
+/*COMISION RESPONSIVA*/
+#comision-directiva{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    
+    position: relative;
+ 
+    height: 42vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center center;
+}
+#comision-directiva h4{
+  
+   
+}
+
+#comision-directiva p{
+    padding-bottom: 20px;
+    position: bottom
+}
+#comision-directiva:before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius:0 0 4% 4%;
+}
+
+/*PRIMEROS JUGADORES RESPONSIVO*/
+#primeros-jugadores{
+    margin-top: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+    height: 42vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center center;
+}
+#primeros-jugadores h4{
+  
+    padding-bottom: 1vh;
+}
+#primeros-jugadores p{
+    padding-bottom: 20px;
+    position: bottom;
+   
+}
+#primeros-jugadores:before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius:0 0 4% 4%;
+}
+
+}
+
+
+#imagen-s-o {
+text-align: center;
+width: 100%;
+margin-bottom: 4vh;
+}
+#img-c{
+    width: 45%;
+}
+
+/* Seccion Origenes responsiva*/
+@media (max-width: 767px){
+
+#img-o{
+    width:85vw;
+
+}
+#img-c{
+    width: 50vw;
+}
+}

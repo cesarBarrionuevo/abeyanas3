@@ -1,3 +1,161 @@
+<<<<<<< HEAD
+
+
+.ficha{
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+}
+.foto-jugador{
+    box-shadow: 2px 2px 10px #666; 
+    background-color: gray;
+   height: 550px;
+}
+.imagen_jugador{
+   margin: auto;
+    
+    
+}
+@media (max-width: 767px){
+.imagen_jugador {
+    box-shadow: 2px 2px 10px #666; 
+    height: 515px;
+}
+.info-jugador{
+    padding-right: 0;
+    padding-left: 0;
+}
+.ficha-jugador{
+    padding-left: 0;
+    padding-right: 0;
+}
+}
+.contiene-imagen{
+
+     
+    
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+  
+}
+.ficha-jugador{
+    background: url(../img/fondo-ficha.jpg) no-repeat;
+    height: 100%;
+    width: 100%;
+    box-shadow: 2px 2px 10px #666;        
+   
+    
+}
+#titulo-jugador{
+    font-family: 'Alatsi', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.titulo-jugador{
+    font-family: 'Alatsi', sans-serif;
+    text-align: center;
+    font-size: 2.3rem;
+    line-height: 30px;
+    padding-top: 30px;
+}
+.posicion-jugador{
+    color: rgb(182, 2, 2) ;
+    font-family: 'Alatsi', sans-serif;
+    text-align: center;
+    padding: 20px 18px 26px;
+    font-size: 1.4rem;
+    line-height: 26px;
+}
+.atributos{
+    font-family: 'Roboto',Helvetica,sans-serif;
+    padding: 16px 18px 0 38px;
+    margin-bottom: 42px;
+}
+.atributos {
+    font-size: 1rem;
+    
+}
+.atributos dt{
+    position: relative;
+    float: left;
+    font-weight: 300;
+    margin-right: 5px;
+    display: list-item; 
+    list-style-type: disc; 
+    color: rgb(160, 25, 25);
+    
+}
+.atributos dd{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 18px;
+    
+}
+.roboto{
+    font-family:'Roboto',Helvetica,sans-serif;
+
+}
+
+
+.btn{
+    
+    margin-top: 15%;
+    
+   
+    border-radius: 148px 148px 148px 148px;
+    -moz-border-radius: 148px 148px 148px 148px;
+    -webkit-border-radius: 148px 148px 148px 148px;
+    
+}
+
+
+/* Página Reserva */
+.posicion-reserva{
+     line-height: 15px;
+          font-size: 14px;
+          color: grey;
+          margin-top: 0;
+          
+          
+}
+h3.nombre-reserva{
+    padding-top: 6px;
+    font-weight: bold;
+}
+h2.numeros-reserva{
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+@media (max-width: 767px){
+    .posicion-reserva{
+        margin-top: 0;
+        line-height: 15px;
+        font-size: 12px;
+   }
+    h3.nombre-reserva{
+         font-weight: bold;
+         font-size: 16px;
+         line-height: 17px;
+         padding-top: 3px;
+    }
+
+    h2.numeros-reserva{
+        color: gray;
+        font-weight: bold;
+        text-align: center;
+        font-size: 50px;
+       
+   
+   }
+=======
 
 
 .ficha{
@@ -145,4 +303,5 @@ h2.numeros-reserva{
        
    
    }
+>>>>>>> 423f165feedb0cdce6dbc74278605eddac3a996d
 }
