@@ -1,4 +1,4 @@
-*{   
+*{
      margin: 0px;
      padding: 0px;
 }
@@ -17,7 +17,7 @@
 }
 .partidos{
      width: 100%;
-     height: 35px;
+     height: 40px;
      color: white;
      background: rgb(8, 7, 7);
 
@@ -27,7 +27,7 @@
      font-size: 11px;
      padding-left: 100px;
      padding-right: 12px;
-     padding-top: 10px;
+     padding-top: 15px;
      text-transform: uppercase;
 }
 .leyenda2{
@@ -35,7 +35,7 @@
      font-size: 11px;
      padding-left: 10px;
      padding-right: 10px;
-     padding-top: 10px;
+     padding-top: 15px;
      text-transform: uppercase;
 }
 
@@ -53,20 +53,20 @@
      }
 
 .mobile-nav p{
-     
+
      display: inline;
 }
 .leyenda1{
-     
+
      font-size: 3vmin;
      margin-left: 0;
      padding-left: .5rem;
-     
+
      padding-right: 0;
 }
 .leyenda2{
-     
-     
+
+
      font-size: .55rem;
      padding-left: .5rem;
      padding-top: 0;
@@ -362,7 +362,7 @@ html{ scroll-behavior: smooth}
      font: italic 14px/14px 'Roboto',Helvetica,sans-serif;
  float: left;
  margin-top: 18px;
-     
+
    }
    #redes-f{
         float: right;
@@ -422,7 +422,7 @@ html{ scroll-behavior: smooth}
 
 #secPartido{
      width: 30%;
-    
+
 
 }
 
@@ -430,7 +430,7 @@ html{ scroll-behavior: smooth}
 
      background:-webkit-linear-gradient(bottom,rgb(88, 0, 0),red,rgb(126, 22, 22));
      opacity: 0.9;
-   
+
 
 }
 .section2{
@@ -439,8 +439,8 @@ html{ scroll-behavior: smooth}
 }
 .hrRojo { margin-bottom: 0px;
      margin-top: 0px;
-     border: 0; 
-     height: 3px; 
+     border: 0;
+     height: 3px;
      text-align: center;
      background-image: -webkit-linear-gradient(left,white,red,white);
      position: fixed;
@@ -451,25 +451,25 @@ html{ scroll-behavior: smooth}
 
 }
 
- 
+
 
  .hr {margin-top: 5px;
-      border: 1px; 
-     border-top: 3px solid #999; 
-     border-bottom: 1px solid #333; 
+      border: 1px;
+     border-top: 3px solid #999;
+     border-bottom: 1px solid #333;
      height:0;}
 
 .tFijo{/*tamaño fijo imagen(resultado partido)*/
-     width:100%; 
+     width:100%;
      height:200px;
 
 
 }
 .tFijoC{/*tamaño fijo de la carta(resultado partido)*/
-     width:100%; 
+     width:100%;
      height: 420px;
    max-height:420px;
-     
+
 
 }
 .posicion-carta{
@@ -477,8 +477,8 @@ html{ scroll-behavior: smooth}
           font-size: 14px;
           color: grey;
           margin-top: 0;
-          
-          
+
+
 }
 h3.nombre{
      padding-top: 6px;
@@ -497,7 +497,7 @@ h3.nombre{
  }.card{
     margin-left: 0.5px;
     margin-right: 0.5px;
-   
+
 
 }
 
@@ -513,7 +513,7 @@ h3.nombre{
 
      }
      #fondo-icono{
-         
+
           background-color:lightskyblue;
      }
 
@@ -522,8 +522,8 @@ h3.nombre{
           font-weight: bold;
           text-align: right;
           font-size: 50px;
-         
-     
+
+
      }
      .posicion-carta{
           margin-top: 0;
@@ -544,7 +544,7 @@ h3.nombre{
 
  /*Footer responsivo */
  @media (max-width: 767px){
-   
+
       #imagen-footer{
            display: inline-block;
            width: 100%;
@@ -562,7 +562,7 @@ h3.nombre{
     margin-top: 6vh;
    margin-left: 0;
     float:none;
-    
+
 }
 
 
@@ -588,11 +588,11 @@ margin-right: auto;
      display: block;
 }
 #redes-footer{
-    
+
      margin-top: 1vh;
      font-size: 270%;
      margin-right: 6px;
-     
+
 }
 #copyright{
      color: #8b8b8c;
@@ -600,7 +600,7 @@ margin-right: auto;
      font-size: 2.8vw;
      text-align: center;
      margin-top: 5vh;
-     
+
 }
 
 }
@@ -610,7 +610,7 @@ margin-right: auto;
 /* boton volver a el plantel*/
 @media (max-width: 767px){
 .boton-volver:before {
-    
+
      content: attr(data-pant-chica);
  }
  .boton-volver{
@@ -619,8 +619,8 @@ margin-right: auto;
 }
 @media (min-width: 768px){
      .boton-volver:before{
-          
+
           content: attr(data-pant-grande);
      }
-     
+
 }
