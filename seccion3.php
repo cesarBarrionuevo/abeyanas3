@@ -40,7 +40,7 @@
 
         <div class="row pb-3 d-md-none d-lg-block">
           <div class="col-12">
-               <div id="C" class="carousel slide" data-ride="carousel">
+               <div id="C" class="carousel carousel-chico slide" data-ride="carousel">
                  <h6 class="p-1" style="color: #17a2b8">Proximos partidos:</h6>
                  <div class="carousel-inner">
                     <div class="carousel-item active">

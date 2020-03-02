@@ -184,7 +184,7 @@ Estilos noticias
     max-width: 99%;
 }
 
-.carousel {
+.carousel-chico {
     background: repeating-linear-gradient(45deg, #90696912, transparent 100px);
     border-radius: 5px;
 }
