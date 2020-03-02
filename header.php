@@ -17,13 +17,14 @@
     style="width: 70%;" alt=""></a>-->
       </div>
 
-      <!-- Segundo encabezado-->
+      <!-- Segundo encabezado
       <div class="container-fluid">
         <div class="row encabezaLogo">
           <a href="index.php">
-            <div class="headerimg"> <img src="img/header5.jpg" style="width: 100%;" alt="imagen"></div>
+            <div class="headerimg"> <img src="img/Header5.jpg" style="width: 100%;" alt="imagen"></div>
           </a>
         </div>
       </div>
+      -->
   </header>
 </div>
