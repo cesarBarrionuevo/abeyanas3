@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Equipo</title>
+     <!--MENU RESPONSIVO-->
+    
     <!--BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -37,7 +39,7 @@
  
 <body background="img/dd1.png">
 <?php
-require_once "navbar.php";
+require_once "navigation1.php";
 ?>
 <header id="header">
 <div class="container-fluid">
@@ -128,6 +130,9 @@ require_once "navbar.php";
     </div>
 </div>
 </div>
+<?php
+require_once "navigation2.php";
+?>
 
 
 

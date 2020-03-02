@@ -572,6 +572,7 @@ Main components
     padding: 0 10px;
     color: #2e2525;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     overflow: visible;
     border-bottom: none;
     -webkit-transition: color 0.3s, box-shadow 0.3s;

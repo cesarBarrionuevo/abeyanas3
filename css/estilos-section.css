@@ -1,0 +1,297 @@
+
+/*Estilos section*/
+.seccion{
+  background-image: url("../img/dd1.png");
+}
+
+.tFijo{/*tamaño fijo imagen(resultado partido)*/
+    width:100%; 
+    height:200px;
+
+
+}
+.tFijoC{/*tamaño fijo de la carta(resultado partido)*/
+    width:100%; 
+    height: 420px;
+    max-height:420px;
+    
+
+}
+/*------------------------------------------ 
+Tajetas(cards) responsive resultado partido
+--------------------------------------------*/
+.card-responsive{
+    font-size: 25px;
+}
+@media screen and (max-width:990px){
+    .card-responsive{
+      font-size: 16px;
+    }
+    .titulo-division{
+         font-size: 16px;
+         padding-top:5px;
+    }
+  }
+@media screen and (max-width:767px){
+  .card-responsive{
+    font-size: 25px;
+    padding-top: 7px;
+  }
+  .titulo-division{
+    font-size:30px;
+    padding-top: 70px;
+}
+@media screen and (max-width:540px) {
+    .titulo-division{
+         font-size:30px;
+         padding-top: 60px;
+
+    }
+}
+@media screen and (max-width:448px){
+    .titulo-division{
+         font-size:25px;
+         padding-top: 50px;
+    }
+}
+
+}
+
+@media screen and (max-width:386px){
+    .titulo-division{
+         font-size:20px;
+         padding-top: 45px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .titulo-division{
+         font-size:20px;
+         padding-top: 35px;
+    }
+}
+
+@media screen and (max-width:332px){
+    .titulo-division{
+         font-size:16px;
+         padding-top: 30px;
+    }
+}
+
+@media screen and (max-width:290px){
+    .card-responsive{
+      font-size: 14px;  
+    }
+    .titulo-division{
+         font-size:16px;
+         padding-top: 25px;
+    }
+  }
+@media screen and (max-width:272px){
+    .titulo-division{
+         font-size:14px;
+         padding-top: 15px;
+    }
+  }
+@media screen and (max-width:220px){
+    .card-responsive{
+    font-size: 10px;
+    padding-top: 10px;
+    
+  }
+  .titulo-division{
+    font-size:14px;
+    padding-top: 5px;
+}
+}
+@media screen and (max-width:228px){
+    .card-responsive{
+      display: none;
+      width: auto;
+    }
+    .titulo-division{
+         font-size:14px;
+         padding-top:5px;
+    }
+    
+  }
+@media screen and (max-width:180px){
+  .card-responsive{
+    display: none;
+    width: auto;
+  }.b-tn{
+       width: 80px;
+       font-size: 8px;
+  }
+  .titulo-division{
+    font-size:10px;
+    padding-top:3px;
+}
+  
+}
+
+
+
+
+
+
+/******************************
+Estilos noticias
+*******************************/
+.table{
+  margin-bottom:0;
+}
+
+.titulo-tabla{
+    /*border: solid;*/
+    /*padding: 1rem;*/
+    text-align: center;
+    background: #000000b3;;
+ 
+  
+    
+}
+
+
+.table tbody{
+  background-color: #04040417;
+  text-align: left;
+}
+
+.table td{
+  border-top: 1px solid black;
+  color: black;
+}
+
+.bb{
+  width: 100%;
+
+
+}
+
+.btn{
+  border-radius: 0;
+}
+
+
+/**********************************
+  Estilos de la columna carousel
+***********************************/
+
+.estilo-col{
+    border: solid red;
+    margin-left: 5px;
+    max-width: 99%;
+}
+
+.carousel {
+    background: repeating-linear-gradient(45deg, #90696912, transparent 100px);
+    border-radius: 5px;
+}
+#C a{
+    width: 2rem;
+    /*height: 4rem;*/
+    margin: auto;
+    border-radius: 3px;
+    background-color: black;
+}
+
+
+
+
+
+/***************************
+  Estilos cards del carousel
+****************************/
+
+
+
+@media screen and (max-width:320px){
+  .estilo-escudos{
+    width: 20px;
+    padding: 0;
+    margin: 0;  
+  }
+}
+
+
+
+
+
+
+.hora-partido{
+    color: red;
+    border-radius: solid black;
+    background: #000000c2;
+    border-radius: 5px;
+    width: 35%;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+}
+
+
+/*************
+ Media card y carousel
+***********/
+
+ @media screen and (width:768px){
+    .carousel{
+      background: #00000038;
+      height: 330.9px;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+ /******************
+ estilos nueva seccion
+ ************/
+
+
+ .fondo-seccion{
+   background: url(../img/dd1.png)  center top;
+ }
+
+
+
+
+
+ .estilo-tajeta{
+  border: 1px solid #abababd3;
+ }
+.fondo-tarjeta{
+  background: url(../img/fondo2.jpg)  center top;
+}
+
+ .estilo-container{
+   background-color: #ffffff;
+ }
+
+ .estilo-columna-resultado-partido{
+  background:#eaeaea70;
+  border-radius: 3px;
+ }
+
+
+
+ .estilo-grupo-tarjetas{
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+
+
+ .estilo-liga{
+  background: #17a2b8;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+ }

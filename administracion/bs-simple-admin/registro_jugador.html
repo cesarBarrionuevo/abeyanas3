@@ -1,0 +1,212 @@
+<style>
+    #principal{
+
+padding:5px 5px 5px 50px;
+background-color:rgb(63, 75, 141);	
+box-shadow: 10px 10px 5px 0px #999999;
+border-radius: 10px;
+}
+
+input{
+color: black;
+}
+select{
+color: black;
+}
+label.error{
+    color: rgb(207, 4, 4);
+}
+td{
+color: white;
+padding-left: 25px;
+padding-top: 25px;
+padding-bottom:25px;
+}
+</style>
+<!--PLUGIN VALIDACION-->
+<script src="assets/js/jquery-validate-plugin.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#registro").click(function() {
+            $("#msj_bienvenido").hide()
+            var url = $(this).attr("href");
+            $("#contenido").load(url);
+            return false;
+        });
+
+        $("#formulario_reg_jug").validate({
+            rules : {
+
+                    nombre : "required",
+                    apellido : "required",
+                    f_nacimiento : "date",
+                    dorsal : {
+                        number : true,
+                        range : [1,99],
+                    },
+                    altura : "number",
+                    peso : "number" ,
+                    face : "url",
+                    twitter : "url",
+                    insta : "url",
+                    equipo: "required"
+
+
+
+
+            },//termina rules
+
+            messages : {
+                nombre : "El nombre es obligatorio",
+                apellido : "El apellido es obligatorio",
+                f_nacimiento : "Ingresa fecha válida MM/DD/AAAA",
+                dorsal : {
+                    number : "Debes ingresar un número",
+                    range : "Debe ser un número entre 1 y 99",
+                },
+                altura : "Debes ingresar un número",
+                peso : "Debes ingresar un número",
+                face : "Ingresa un url en formato http://",
+                twitter : "Ingresa un url en formato http://",
+                insta : "Ingresa un url en formato http://",
+                equipo : "Selecciona el equipo al que pertenece",
+            }//termina mensajes
+        });
+
+        $("#formulario_reg_jug").submit(function () {
+            var datosFormulario = $(this).serialize();
+            $.getJSON("assets/php/registro.php", datosFormulario, procesarDatos);
+
+			return false;
+        });
+
+
+    });
+</script>
+  
+  <!--SECCION REGISTRAR JUGADOR-->
+  <div id="registrar_jugador" >
+    <h1 style="text-align: justify;">REGISTRAR JUGADOR</h1>
+     <form action="#" method="get" id="formulario_reg_jug">
+        <table width="500px" border="0" align="center" id="principal">
+            <tr>
+              <td>Nombre:</td>
+              <td><label for="nombre"></label>
+                <input type="text" name="nombre" id="nombre" ></td>
+            </tr>
+            <tr>
+              <td>Apellido:</td>
+              <td><input type="text" name="apellido" id="apellido" ></td>
+            </tr>
+            <tr>
+              <td>Fecha Nacimiento</td>
+              <td><label for="f_nacimiento"></label>
+                <input type="text" name="f_nacimiento" id="f_nacimiento"  class="" ></td>
+            </tr>
+            <tr>
+              <td>Dorsal:</td>
+              <td><input name="dorsal" type="dorsal" id="dorsal" size="4"  ></td>
+            </tr>
+            <tr>
+              <td>Lugar de nacimiento:</td>
+              <td><label for="l_nac"></label>
+                <input type="text" name="l_nac" id="l_nac"></td>
+            </tr>
+            <tr>
+              <td>Provincia:</td>
+              <td><label for="prov"></label>
+                <input type="text" name="prov" id="prov"></td>
+            </tr>
+            <tr>
+              <td>Nacionalidad:</td>
+              <td><label for="nac"></label>
+                <input type="text" name="nac" id="nac" "  ></td>
+            </tr>
+            <tr>
+              <td>Altura:</td>
+              <td><label for="altura"></label>
+                <input type="text" name="altura" size="4" id="altura" ></td>
+            </tr>
+            <tr>
+              <td>Peso:</td>
+              <td><label for="peso"></label>
+                <input type="text" size="4" name="peso" id="peso" ></td>
+            </tr>
+            <tr>
+              <td>Facebook:</td>
+              <td><label for="face"></label>
+                <input type="text" name="face" id="face" ></td>
+            </tr>
+            <tr>
+              <td>Twitter:</td>
+              <td><label for="twitter"></label>
+                <input type="text" name="twitter" id="twitter" ></td>
+            </tr>
+            <tr>
+              <td>Instagram:</td>
+              <td><label for="insta"></label>
+                <input type="text" name="insta" id="insta" ></td>
+            </tr>
+            
+             
+             <tr>
+              <td><p>Posición:</p></td>
+              <td><p>
+                <label for="posicion"></label>
+                <select name="posicion" id="posicion">
+                  <option>Arquero/a</option>
+                  <option>Defensor/a</option>
+                  <option>Mediocampista</option>
+                  <option>Delantero/a</option>
+                </select>
+             </td>
+            </tr>
+             <tr>
+              <td><p>Pie hábil:</p></td>
+              <td><p>
+                <label for="pie"></label>
+                <select name="pie" id="pie">
+                  <option>Izquierdo</option>
+                  <option>Derecho</option>
+                  <option>Ambidiestro</option>
+                </select>
+             </td>
+            </tr>
+             <tr>
+              <td><p>Equipo:</p></td>
+              <td><p>
+                <label for="equipo"></label>
+                <select name="equipo" id="equipo">
+                  <option>Masculino - Primera División</option>
+                  <option>Masculino - Reserva</option>
+                  <option>Femenino 1</option>
+                  <option>Femenino 2</option>
+                </select>
+             </td>
+            </tr>
+            <input type="hidden" name="MAX_TAM" value="2097152">
+            <tr>
+                <td colspan="2" align="center">FOTO CARA - Seleccione una imagen con tamaño inferior a 2 MB</td></tr>
+            <tr>
+                <td colspan="2" align="center"><input type="file"  class="btn btn-outline-primary" name="imagen" id="imagen_cara"></td>
+            </tr>
+            <input type="hidden" name="MAX_TAM" value="2097152">
+            <tr>
+                <td colspan="2" align="center">FOTO DORSO - Seleccione una imagen con tamaño inferior a 2 MB</td></tr>
+            <tr>
+                <td colspan="2" align="center"><input type="file"  class="btn btn-outline-primary" name="imagen" id="imagen_dorso"></td>
+            </tr>
+
+
+
+
+
+
+            <tr>
+            <td colspan="2" align="center"><input type="submit" value="REGISTRAR" id="registra"></td>
+           
+            </tr>
+          </table>
+
+     </form>   
+</div>

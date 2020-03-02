@@ -22,8 +22,8 @@
 
 								<ul class="is-hidden">
 									<li class="go-back"><a style="font-family: 'Spartan' ;" href="#0">MASCULINO</a></li>
-									<li class="see-all"><a id="primera" style="font-family: 'Spartan' ;" href="equipo.php">Primera División</a></li>
-									<li class="see-all"><a id="reserva" style="font-family: 'Spartan' ;" href="reserva.php">Reserva</a></li>
+									<li class="see-all"><a id="primera" style="font-family: 'Spartan' ;" href="equipo.php?cat=1">Primera División</a></li>
+									<li class="see-all"><a id="reserva" style="font-family: 'Spartan' ;" href="equipo.php?cat=2">Reserva</a></li>
 								
 								</ul>
 								
@@ -33,8 +33,8 @@
 								<a id="f-fem" class="" href="#0">Femenino</a>
 								<ul class="is-hidden">
 									<li class="go-back"><a style="font-family: 'Spartan' ;" href="#0">FEMENINO</a></li>
-									<li class="see-all"><a id="plantel1" style="font-family: 'Spartan' ;" href="equipo.php">Plantel 1</a></li>
-									<li class="see-all"><a id="plantel2" style="font-family: 'Spartan' ;" href="reserva.php">Plantel 2</a></li>
+									<li class="see-all"><a id="plantel1" style="font-family: 'Spartan' ;" href="equipo.php?cat=3">Plantel 1</a></li>
+									<li class="see-all"><a id="plantel2" style="font-family: 'Spartan' ;" href="equipo.php?cat=4">Plantel 2</a></li>
 								
 								</ul>
 							
