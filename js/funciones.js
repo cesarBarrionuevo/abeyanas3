@@ -84,7 +84,7 @@
 window.onscroll = function () { myFunction() };
 
 function myFunction() {
-  if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
    
     document.getElementById("escudo").className = "";
     
@@ -97,7 +97,7 @@ function myFunction() {
 
   } else {
     
-    document.getElementById("escudo").className = "d-none";
+    document.getElementById("escudo").className = "";
   
     $("body").removeClass("nav-is-fixed");
     var x = document.getElementsByClassName("nav-item");

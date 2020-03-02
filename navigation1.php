@@ -18,7 +18,7 @@
 
 	
 		<ul>
-		<li class="d-none" id="escudo">
+		<li class="" id="escudo">
                   <!---->
                   <a href="#header" id="escudo-navbar" class=""><img src="img/escudo.png" width="50" height="52"
                           ></a><p class="texto-borde-navbar"><strong>ClubSportivo</strong>Avellaneda</p>
