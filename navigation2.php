@@ -1,5 +1,5 @@
 
-		
+
 		<div class="cd-overlay"></div>
 	</main>
 
@@ -10,63 +10,63 @@
 
 				<ul class="cd-secondary-nav is-hidden">
 					<li class="go-back"><a href="#0">Menú</a></li>
-					
+
 					<li class="has-children">
 						<a id="letra-futbol">FÚTBOL</a>
 
 						<ul class="is-hidden">
 							<li class="go-back"><a id="letra-futbol" href="#0">FÚTBOL</a></li>
-							
+
 							<li class="has-children">
 								<a id="f-mas" href="#0">Masculino</a>
 
 								<ul class="is-hidden">
-									<li class="go-back"><a style="font-family: 'Spartan' ;" href="#0">MASCULINO</a></li>
-									<li class="see-all"><a id="primera" style="font-family: 'Spartan' ;" href="equipo.php?cat=1">Primera División</a></li>
-									<li class="see-all"><a id="reserva" style="font-family: 'Spartan' ;" href="equipo.php?cat=2">Reserva</a></li>
-								
+									<li class="go-back"><a style="font-family: 'Roboto Condensed' ;" href="#0">MASCULINO</a></li>
+									<li class="see-all"><a id="primera" style="font-family: 'Roboto Condensed' ;" href="equipo.php?cat=1">Primera División</a></li>
+									<li class="see-all"><a id="reserva" style="font-family: 'Roboto Condensed' ;" href="equipo.php?cat=2">Reserva</a></li>
+
 								</ul>
-								
+
 							</li>
-							
+
 							<li class="has-children">
-								<a id="f-fem" class="" href="#0">Femenino</a>
+								<a id="f-mas" class="" href="#0">Femenino</a>
 								<ul class="is-hidden">
-									<li class="go-back"><a style="font-family: 'Spartan' ;" href="#0">FEMENINO</a></li>
-									<li class="see-all"><a id="plantel1" style="font-family: 'Spartan' ;" href="equipo.php?cat=3">Plantel 1</a></li>
-									<li class="see-all"><a id="plantel2" style="font-family: 'Spartan' ;" href="equipo.php?cat=4">Plantel 2</a></li>
-								
+									<li class="go-back"><a style="font-family: 'Roboto Condensed' ;" href="#0">FEMENINO</a></li>
+									<li class="see-all"><a id="plantel1" style="font-family: 'Roboto Condensed' ;" href="equipo.php?cat=3">Plantel 1</a></li>
+									<li class="see-all"><a id="plantel2" style="font-family: 'Roboto Condensed' ;" href="equipo.php?cat=4">Plantel 2</a></li>
+
 								</ul>
-							
+
 							</li>
 
 						</ul>
-					
+
 					</li>
 
-					
+
 					<li class="has-children">
-						
+
 						<div class="d-none d-sm-none d-md-block">
 							<img src="img/escudo.png" width="70%" alt="">
 						</div>
-						
-						</li>	
-					
+
+						</li>
+
 						<li id="imagen-cambiante-masculino">
 							<div>
 								<img id="foto" src="img/av3.jpeg" alt="">
 								<p style="margin-left: 10px; font-weight: bold; font-family: 'Josefin Sans' ;">Conocé los integrantes de nuestros equipos de fútbol masculino</p>
 							</div>
 						</li>
-						
-					
 
-					
+
+
+
 				</ul>
-				
+
 			</li>
-			
+
 			<li class="has-children">
 				<a href="">EL CLUB</a>
 
@@ -77,14 +77,14 @@
 					<li>
 						<a class="cd-nav-item" >
 							<img src="img/nuestros_origenes.jpg" alt="">
-							
+
 						</a>
 					</li>
 
 					<li>
 						<a class="cd-nav-item" >
 							<img src="img/fuera-club.jpg" alt="">
-							
+
 						</a>
 					</li>
 
@@ -178,4 +178,3 @@
 <script src="js/js/jquery-2.1.1.js"></script>
 <script src="js/js/jquery.mobile.custom.min.js"></script>
 <script src="js/js/main.js"></script> <!-- Resource jQuery -->
-

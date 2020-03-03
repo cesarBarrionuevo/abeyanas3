@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, main {
 	display: block;
 }
@@ -56,14 +56,14 @@ table {
 }
 #escudo{
 	display: none;
-	
+
 }
 }
 #escudo-navbar{
 	position: absolute;
 	left: 80px;
 	bottom: 18%;
-	
+
 }
 
 .texto-borde-navbar{
@@ -80,20 +80,20 @@ table {
 	-webkit-text-stroke: 1px red;
 	 color: transparent;
 	 font-weight: normal;
-}	
+}
 @media screen and (orientation:landscape)
-and (min-device-width: 319px) 
+and (min-device-width: 319px)
 and (max-device-width: 768px) {
 	#escudo-footer{
 		padding-left: 60px;
 	}
   #nombre-club-footer{
 	  padding-top: 26px;
-	  
+
   }
   .texto-borde{
 	  margin-left: 20px;
-	  
+
   }
 }
 #imagen-cambiante-masculino{
@@ -115,13 +115,16 @@ and (max-device-width: 768px) {
 }
 }
 #letra-futbol{
-	color: rgb(53, 53, 53);
-	font-family: 'Trade Winds' ;
+	color: rgb(255, 0, 0);
+	font-family: 'Roboto Condensed' ;
+	font-size: 32px;
+/*	font-family: 'Trade Winds' ; */
 }
 #f-mas{
 
-	font-family: 'Spartan' ;
-
+	font-family: 'Roboto Condensed' ;
+	font-size: 22px;
+	padding-left: 20px;
 }
 #letra-el-club{
 	font-size: 1.6rem;
@@ -131,7 +134,10 @@ and (max-device-width: 768px) {
 }
 
 #f-fem{
-	font-family: 'Spartan' ;
+	font-family: 'Roboto Condensed' ;
+}
+#primera, #reserva, #plantel1, #plantel2{
+	padding-left: 60px;
 }
 .texto-el-club{
 	line-height: 25px;
@@ -145,8 +151,8 @@ and (max-device-width: 768px) {
 @media (max-width: 767px){
 	#letra-futbol{
 		color: white;
-}
-#primera, #reserva, #plantel1, #plantel2, #ir-club{
-	color: white;
-}
+	}
+	#primera, #reserva, #plantel1, #plantel2, #ir-club{
+		color: white;
+	}
 }
