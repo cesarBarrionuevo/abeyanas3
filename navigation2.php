@@ -47,7 +47,7 @@
 
 					<li class="has-children">
 
-						<div class="d-none d-sm-none d-md-block">
+						<div class="d-none d-sm-none d-md-block text-center">
 							<img src="img/escudo.png" width="70%" alt="">
 						</div>
 
