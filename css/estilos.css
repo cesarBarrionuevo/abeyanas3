@@ -102,6 +102,19 @@ div.vertical-line{
       margin-left: 60vh;
       margin-bottom: 15px;;
 }
+#sistemas{
+     position: absolute;
+     
+     text-align: center;
+     padding-top: 8px;
+     right: 80px;
+     
+     color: #8b8b8c;
+     font-size: 22px;
+     font-family: 'Roboto Condensed' ;
+
+      
+}
 /*Tamaño segundo header*/
 .headerimg{
       max-height: 135px;

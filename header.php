@@ -15,6 +15,9 @@
         <p class="img-header1"><img src="img/IMG_EscuEquipos/talleres.png" style="width: 16%;" alt=""></p>
     <!--      <a class="img-sponsor-header"href="http://www.famago.com.ar"><img src="img/sponsor.png"
     style="width: 70%;" alt=""></a>-->
+            <div id="sistemas" style="text-align: center">
+
+            </div>
       </div>
 
       <!-- Segundo encabezado

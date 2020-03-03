@@ -22,6 +22,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <!--CSS-->
+    <link rel="stylesheet" href="css/css/navigation1.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/css/navigation2.css"> <!-- Resource style -->
+    <script src="js/js/modernizr.js"></script> <!-- Modernizr -->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilo-fondo.css">
     <link rel="stylesheet" href="css/club.css">
@@ -31,6 +34,17 @@
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <script src="js/palabras.js"></script>
 
 
    
@@ -100,9 +114,9 @@ require_once "navigation1.php";
 
         <div id="ori" hidden>
         <br>
-            <h3 style="text-align: center; font-family: 'Anton', sans-serif; font-size: 60px">Orígenes</h3>
+            <h3 style="">Orígenes</h3>
             <br>
-            <p style="text-align: center">Se suma a la vida deportiva local el Club Sportivo Avellaneda el 30 de mayo de 1940. Por ser bastante nuevo si se quiere, no es impedimento para que haya cumplido, en el lapso de ocho décadas, actividades intensas que conquistarán de inmediato grandes simpatías entre los aficionados y desde luego en toda la extensa barriada donde surgió. <br>
+            <p style="">Se suma a la vida deportiva local el Club Sportivo Avellaneda el 30 de mayo de 1940. Por ser bastante nuevo si se quiere, no es impedimento para que haya cumplido, en el lapso de ocho décadas, actividades intensas que conquistarán de inmediato grandes simpatías entre los aficionados y desde luego en toda la extensa barriada donde surgió. <br>
                     Un grupo de muchachos de barrio se reunió para ir formando un equipo de fútbol que los representara en los torneos locales. Esto se remonta al año 1938 y la esquina de Belgrano y Brown era el centro de reuniones donde se iban tejiendo sueños de ilusión.
                     Se forma un grupo animoso dispuesto a salir a la palestra, desafiando a todos los obstáculos que podrían hallarse, y capeando el temporal nace "Once Cañoneros". Se presentan en torneos de barrios haciendo su debut con esta formación: Kissner, Da Gracia y Rincón, Priotto, Carranza y Ainza; Rossi, Toselli, Moyano, Pérez y Reynoso.
                      <br> Dos años después, un co­merciante de la zona, don Carlos Druvetta, nervio y motor del nacimiento del club, propone cambiar por "Avellaneda" a ese llamado "Once Cañoneros" y la
@@ -114,9 +128,9 @@ require_once "navigation1.php";
         </div>
         <div id="comision" hidden>
             <br>
-            <h3 style="text-align: center; font-family: 'Anton', sans-serif; font-size: 60px">Comision Directiva</h3>
+            <h3 style="">Comision Directiva</h3>
             <br>
-            <p style="text-align: center">La comisión fundadora, verdadero puntal de la entidad, se formaba de la siguiente manera: <br><br>-Presidente: Carlos Druvetta <br>-Vicepresidente: Enrique Corán <br>-Secretario: Lirio Rossi <br>-Prosecretario: Héctor O 'Duyer <br>-Tesorero: Domingo Manzi <br>-Protesorero: Felipe Toselli <br>-Vocales: Néstor Boscone,
+            <p style="">La comisión fundadora, verdadero puntal de la entidad, se formaba de la siguiente manera: <br><br>-Presidente: Carlos Druvetta <br>-Vicepresidente: Enrique Corán <br>-Secretario: Lirio Rossi <br>-Prosecretario: Héctor O 'Duyer <br>-Tesorero: Domingo Manzi <br>-Protesorero: Felipe Toselli <br>-Vocales: Néstor Boscone,
             Eduardo Villa, Jorge Salinas <br>-Revisadores de cuentas: Felipe Gracia,José Dell Óspedalle</p>
             <br>
             <div id="imagen-s-o">
@@ -142,31 +156,7 @@ require_once "navigation2.php";
 
 <!--SCRIPT NAVBAR-->
 <script>
-  window.onscroll = function () { myFunction() };
-
-function myFunction() {
-if (document.body.scrollTop > 142 || document.documentElement.scrollTop > 142) {
-    document.getElementById("escudo").className = "";
-    var x = document.getElementsByClassName("nav-item");
-    var i;
-    for (i = 0; i < x.length; i++) {
-        x[i].classList.add('animacion');
-
-    }
-
-
-
-} else {
-    document.getElementById("escudo").className = "d-none";
-    var x = document.getElementsByClassName("nav-item");
-    var i;
-    for (i = 0; i < x.length; i++) {
-        x[i].classList.remove('animacion');
-
-    }
-
-}
-}
+  
 
 
 function cambiaColor(opcion){
@@ -221,5 +211,6 @@ function cambiaColor(opcion){
 }
  
 </script>
+<script src="js/funciones.js"></script>
 </body>
 </html>

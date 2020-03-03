@@ -52,7 +52,7 @@
                -->
           </div>
 
-               <div class="copyright" id="copyright">
+               <div class="copyright" id="copyright" style="line-height: 3vh">
                    <p>Club Sportivo Avellaneda © 2019 Todos los derechos reservados</p>
                    <p>Sede San Martín & Avellaneda - Venado Tuerto - Santa Fe - Argentina</p>
                    <p>mail: administración@sportivoavellaneda.com.ar</p>

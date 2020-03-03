@@ -36,6 +36,25 @@
     text-decoration: none;
     color: red;
 }
+#ori h3, #comision h3, #jugadores h3{
+    text-align: center; 
+    font-family: 'Anton', sans-serif;
+     font-size: 60px;
+
+}
+#ori p, #comision p, #jugadores p{
+    text-align: center; 
+    font-family: 'Bree Serif' ; 
+    font-size: 20px ;
+}
+@media (max-width: 767px){
+    #ori h3, #comision h3, #jugadores h3{
+        font-size: 8vw;
+    }
+    #ori p, #comision p, #jugadores p{
+        font-size: 4vw;
+    }
+}
 
 
 #seccion-orig{
@@ -56,6 +75,7 @@
     text-decoration: none;
 }
 #seccion-orig h4{
+    font-family: 'Roboto Slab' ;
 padding-left: 2%;
 font-size: 1.5em;
   font-weight: bold;
@@ -65,9 +85,10 @@ font-size: 1.5em;
     
 }
 #seccion-orig p{
+    font-family: 'Roboto Condensed' ;
     padding-left: 2%;
     font-size: 16px;
-   padding-bottom: 1%;
+   padding-bottom:5%;
     color:rgb(0, 174, 255);
     position: relative;
     -webkit-text-stroke: .07px white;
@@ -111,7 +132,7 @@ font-size: 1.5em;
 #comision-directiva h4{
     
 
-
+    font-family: 'Roboto Slab' ;
 padding-left: 2%;
   font-size: 1.5em;
   font-weight: bold;
@@ -121,9 +142,10 @@ padding-left: 2%;
     
 }
 #comision-directiva p{
+    font-family: 'Roboto Condensed' ;
     padding-left: 2%;
     font-size: 16px;
-   padding-bottom: 1%;
+   padding-bottom: 5%;
    color:rgb(0, 174, 255);
     position: relative;
     -webkit-text-stroke: .07px white;
@@ -161,6 +183,7 @@ padding-left: 2%;
     text-decoration: none;
 }
 #primeros-jugadores h4{
+    font-family: 'Roboto Slab';
 padding-left: 2%;
 font-size: 1.5em;
   font-weight: bold;
@@ -170,9 +193,10 @@ font-size: 1.5em;
     
 }
 #primeros-jugadores p{
+    font-family: 'Roboto Condensed' ;
     padding-left: 2%;
     font-size: 16px;
-   padding-bottom: 1%;
+   padding-bottom: 5%;
    color:rgb(0, 174, 255);
     position: relative;
     -webkit-text-stroke: .07px white;
@@ -206,11 +230,13 @@ font-size: 1.5em;
     background-position: center center;
 }
 #seccion-orig h4{
-  
+    font-size: 6vw;
+  padding-bottom: 5%;
    
 }
 #seccion-orig p{
-    padding-bottom: 20px;
+    font-size: 4vw;
+    padding-bottom: 10%;
     position: bottom;
 }
 #seccion-orig:before{
@@ -240,12 +266,14 @@ font-size: 1.5em;
     background-position: center center;
 }
 #comision-directiva h4{
-  
+    font-size: 6vw;
+  padding-bottom: 5%;
    
 }
 
 #comision-directiva p{
-    padding-bottom: 20px;
+    font-size: 4vw;
+    padding-bottom: 10%;
     position: bottom
 }
 #comision-directiva:before{
@@ -275,11 +303,12 @@ font-size: 1.5em;
     background-position: center center;
 }
 #primeros-jugadores h4{
-  
-    padding-bottom: 1vh;
+    font-size: 6vw;
+    padding-bottom: 5%;
 }
 #primeros-jugadores p{
-    padding-bottom: 20px;
+    font-size: 4vw;
+    padding-bottom: 10%;
     position: bottom;
    
 }
